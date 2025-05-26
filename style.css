@@ -1,3 +1,163 @@
 @charset "utf-8";
 /* CSS Document */
+/* styles.css */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
 
+body {
+	font-family: Arial, sans-serif;
+	line-height: 1.6;
+	color: #333;
+}
+
+/* Header */
+.site-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 40px 10vw;
+	background-color: indianred;
+}
+
+.logo-tag {
+	margin-bottom: 5px;
+	display: flex;
+}
+
+.nav-links a {
+	margin-left: 20px;
+	text-decoration: none;
+	color: yellow;
+	font-weight: bold;
+}
+
+/* Hero Section */
+.hero {
+	height: 500px;
+	background-color: yellow;
+	display: flex;
+	justify-content: flex-end;
+	padding: 10vw;
+}
+
+.hero-content {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	gap: 20px;
+}
+
+.hero-text {
+	display: flex;
+	flex-direction: column;
+	background-color: white;
+	padding: 20px;
+	max-width: 300px;
+	border-radius: 5px;
+	gap: 20px 0px;
+}
+
+/* Content Section */
+.content-section {
+	display: flex;
+	flex-direction: column;
+	height: 600px;
+	margin: 0 10vw;
+}
+
+.partners {
+	display: flex;
+	justify-content: center;
+	padding: 40px 0;
+	background-color: coral;
+}
+
+.split-section {
+	display: flex;
+	height: 100%;
+}
+
+.split-left, .split-right {
+	flex: 1;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.split-left {
+	background-color: lightskyblue;
+}
+
+.split-right {
+	display: flex;
+	flex-direction: column;
+}
+
+.factbox, .content-2 {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+	
+.factbox {
+	background-color: pink;
+}
+
+.content-2 {
+	background-color: greenyellow;
+}
+
+/* Quote Section */
+.quote-section {
+	height: 150px;
+	background-color: mediumpurple;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-style: italic;
+}
+
+/* Faculty Section */
+.faculty-section {
+	background-color: orange;
+	padding: 50px 100px;
+	margin: 0 10vw;
+}
+
+.faculty-section h2 {
+	text-align: center;
+}
+
+.faculty {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	padding: 40px 0;
+}
+
+.circle {
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+	background-color: yellow;
+}
+
+/* Footer */
+.site-footer {
+	display: flex;
+	justify-content: space-between;
+	padding: 20px 10vw;
+	background-color: indianred;
+	color: black;
+}
+
+.site-footer a {
+	color: yellow;
+	text-decoration: none;
+	margin-left: 15px;
+}
