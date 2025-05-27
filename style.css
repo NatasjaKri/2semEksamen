@@ -17,29 +17,18 @@
 	
 /*TYPOGRAFI */
 /*html størrelser for lettere at kunne lave media quaries*/
-:root {
-	--base-font-size: 16px;}
 
-html {font-size: var(--base-font-size);}
+html {font-size: 16px;}
 
-.hero{
-	--base-font-size: 20px; 
-	font-size: var(--base-font-size);}
-.content-section{
-	--base-font-size: 18px; 
-	font-size: var(--base-font-size);}
-.site-header {
-	--base-font-size: 16px;
-	font-size: var(--base-font-size);}
-.site-footer {
-	--base-font-size: 14px;
-	font-size: var(--base-font-size);}
-
+@media (max-width:800px){
+	html {font-size: 14px;}}
+@media (max-width:600px){
+	html {font-size: 12px;}}
 
 h1 {
 	font-family: 'Audiowide', sans-serif;
 	font-weight: normal;
-	font-size: 2.5rem;
+	font-size: 3rem;
 	line-height: 1.2;}
 h2 {
 	font-family: 'Space Grotesk', sans-serif;
@@ -53,14 +42,30 @@ h3 {
 	line-height: 1.4;}
 h4 {
 	font-family: 'Space Grotesk', sans-serif;
+	font-size: 1.3rem;
+	font-weight: 700;
+	line-height: 1.4;}
+h5 {
+	font-family: 'Space Grotesk', sans-serif;
 	font-size: 1.25rem;
 	font-weight: 400;
 	line-height: 1.4;}
+h6 {
+	font-family: 'Inter', sans-serif;
+	font-size: 1rem;
+	font-weight: bold;
+	line-height: 1.6;}
 p {
 	font-family: 'Inter', sans-serif;
 	font-size: 1rem;
 	font-weight: 400;
 	line-height: 1.6;}
+.quote p {
+	font-family: 'Inter', sans-serif;
+	font-size: 1.3rem;
+	font-weight: 400;
+	line-height: 1.6;
+	font-style: italic;}
 
 body {
  	display: grid;
@@ -86,7 +91,8 @@ body {
 	justify-content: space-between;
 	align-items: center;
 	padding: 40px 10vw;
-	background-color: indianred;
+	background-color: var(--gun-blue);
+	color: var(--contrast);
 }
 
 .logo-tag {
@@ -98,7 +104,7 @@ body {
 	display: inline-block;
 	margin-left: 20px;
 	text-decoration: none;
-	color: yellow;
+	color: var(--powder-white);
 }
 
 /* Hero Section */
@@ -131,7 +137,7 @@ body {
 .content-section {
 	display: flex;
 	flex-direction: column;
-	height: 600px;
+	height: auto;
 	margin: 0 10vw;
 }
 
@@ -143,50 +149,74 @@ body {
 }
 
 .split-section {
-	display: flex;
-	height: 100%;
+  display: flex;
+  height: auto; /* så sektionen vokser efter indhold */
 }
 
 .split-left, .split-right {
-	flex: 1;
-	display: flex;
-	align-items: center;
-	justify-content: center;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .split-left {
-	background-color: lightskyblue;
+  background-color: var(--steel-blue);
+  color: var(--powder-white);
+}
+.participants {
+  display: grid;
+  grid-template-columns: 3rem 1fr;
+  column-gap: 1rem;
+  align-items: start;
 }
 
 .split-right {
-	display: flex;
-	flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
-.factbox, .content-2 {
-  flex: 1;
+.factbox {
   display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  background-color: pink;
+  gap: 1rem;
+  height: auto;
+  align-items: left;
+  justify-content: center;
+  width: 100%;
+}
+
+.fact-item {
+  display: grid;
+  grid-template-columns: 120px 1fr;
+  column-gap: 1rem;
+  align-items: start;
+}
+
+.content-2 {
+  display: flex;
+  flex-direction: column;
+  background-color: greenyellow;
   align-items: center;
   justify-content: center;
   width: 100%;
 }
-	
-.factbox {
-	background-color: pink;
-}
 
-.content-2 {
-	background-color: greenyellow;
-}
 
 /* Quote Section */
 .quote-section {
-	height: 150px;
-	background-color: mediumpurple;
+	height: auto;
+	background-color: var(--sky-blue);
+	color: var(--powder-white);
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	font-style: italic;
+	text-align: center;
+	padding: 20px;
+	border-bottom: solid 0.5rem var(--midnight-blue)
 }
 
 /* Faculty Section */
@@ -228,4 +258,7 @@ body {
 	color: yellow;
 	text-decoration: none;
 	margin-left: 15px;
+}
+
+@media (max-width:800px){
 }
