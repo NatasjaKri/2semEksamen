@@ -125,6 +125,7 @@ body {
 	color: var(--contrast);
 	border-radius: 0 0 20px 20px;
 	box-shadow: 0 5px 5px 5px var(--midnight-blue);
+	z-index: 1;
 	
 }
 
@@ -173,9 +174,9 @@ body {
 /* Hero Section */
 .hero {
 	height: 500px;
-	background-color: yellow;
+	background-image: radial-gradient(circle at left bottom, rgba(0, 0, 0, 0), var(--gun-blue) 70%), url("img/hero-image.jpg");
 	background-size: cover;
-	background-position: center;
+	background-position: top;
 	display: flex;
 	justify-content: flex-start;
 	flex-direction: column;
