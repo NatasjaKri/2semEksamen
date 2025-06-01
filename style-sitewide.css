@@ -51,7 +51,7 @@ html {font-size: 16px;}
 	html {font-size: 14px;}}
 @media (max-width:900px){
 	html {font-size: 13px;}}
-@media (max-width:800px){
+@media (max-width:850px){
 	html {font-size: 12px;}}
 
 
@@ -341,8 +341,10 @@ body {
 	.site-header {
 		align-items: baseline;
 		padding: 1rem 2vw 1rem 2vw;}
+	.logo-tag {
+		margin-top: 0.2rem;}
 	#toggle-theme {
-		top: 1.5rem;
+		top: 1rem;
 		right: 2vw;}
 	.site-footer {
 		padding: 2rem 2vw;}
@@ -353,6 +355,8 @@ body {
 		margin-right: 1vw;}
 	.site-header {
 		padding: 0 1vw 0 1vw;}
+	.logo-tag {
+		margin-top: 1rem;}
 	.site-footer {
 		padding: 2rem 1vw;}
 	}
