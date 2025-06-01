@@ -2,7 +2,7 @@
 /* CSS Document */
 
 /* Hero Section */
-.hero {
+#hero {
 	height: auto;
 	min-height: 80vh;
 	background-image: radial-gradient(circle at left bottom, rgba(0, 0, 0, 0), var(--gun-blue) 70%), url("img/hero-image.jpg");
@@ -13,18 +13,18 @@
 	flex-direction: column;
 	padding: 2rem 2rem;
 	border-radius: 1rem;
-	box-shadow: 0 0.2rem 0.8rem 0.1rem var(--shadows-mode);
+	box-shadow: 0 0.2rem 1rem 0.3rem var(--shadows-mode);
 	color: var(--powder-white-const);
 	text-align: center;
 }
 
-.hero-content {
+#hero-content {
 	display: flex;
 	flex-direction: column;
 	align-items: flex-end;
 }
 
-.hero-text {
+#hero-text {
 	display: flex;
 	flex-direction: column;
 	padding: 2rem 1rem;
@@ -42,10 +42,9 @@
 }
 
 /* Content Section */
-.content-section {
+#content-section {
 	display: flex;
 	height: auto;
-	padding: 4rem;
 	outline: 0.2rem solid var(--powder-white-const);
 	outline-offset: -2rem; 
 	background-image: linear-gradient(var(--sky-blue), var(--midnight-blue-const));
@@ -56,8 +55,8 @@
 	flex: 1;
 	display: flex;
 	flex-direction: column;
-	align-items: center;
-	justify-content: center;
+	align-items:flex-end;
+	justify-content: flex-start;
 	color: var(--powder-white-const);
 }
 .participants {
@@ -88,10 +87,10 @@
 	color: var(--midnight-blue-const);
 	gap: 0.5rem;
 	height: auto;
-	border-radius: 1.2rem;
+	border-radius: 1rem;
 	align-items: center;
 	justify-content: center;
-	width: 30vw;
+	width: 33vw;
 	padding: 3rem;
 	outline: 0.2rem solid var(--powder-white-const);
 	outline-offset: -1rem;
@@ -119,7 +118,7 @@
 
 
 /* Partners Section*/
-.partners-section {
+#partners-section {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -149,7 +148,7 @@
 }
 
 /* Quote Section */
-.quote-section {
+#quote-section {
 	height: auto;
 	background-color: var(--sky-blue);
 	color: var(--powder-white-const);
@@ -157,7 +156,8 @@
 	align-items: center;
 	justify-content: center;
 	text-align: center;
-	padding: 20px;
+	padding-top: 2rem;
+	padding-bottom: 2rem;
 	border-bottom: solid 0.5rem var(--midnight-blue-mode)
 }
 
@@ -187,5 +187,3 @@
 	background-color: yellow;
 }
 
-@media (max-width:600px){
-}

@@ -129,11 +129,18 @@ body {
 	color: var(--midnight-blue-mode);
 }
 
-section {
+.section-smal {
 	margin-top: 3rem;
 	margin-bottom: 0;
 	margin-left: 8vw;
 	margin-right: 8vw;
+}
+.section-wide {
+	margin-top: 3rem;
+	margin-bottom: 0;
+	margin-left: 0;
+	margin-right: 0;
+	padding:8vw;
 }
 
 /*Scroll*/
@@ -157,7 +164,7 @@ section {
 	background-color: var(--gun-blue);
 	color: var(--contrast);
 	border-radius: 0 0 1rem 1rem;
-	box-shadow: 0 0.3rem 0.5rem 0.1rem var(--shadows-mode);
+	box-shadow: 0 0.2rem 1rem 0.3rem var(--shadows-mode);
 	z-index: 1;
 }
 
@@ -213,7 +220,7 @@ section {
 .site-footer {
 	display: flex;
 	justify-content: space-between;
-	padding: 2rem 10vw;
+	padding: 2rem 8vw;
 	min-height: 200px;
 	background-color: var(--gun-blue); /*ændret farven til at matche header*/
 	background-image: url("img/logoWatermarkMirror.png"), url("img/logoWatermark.png");
@@ -262,6 +269,8 @@ section {
 		margin-right: 7vw;}
 	.site-header {
 		padding: 0 7vw 0 7vw;}
+	.site-footer {
+		padding: 2rem 7vw;}
 }
 @media (max-width:1000px){
 	section {
@@ -271,6 +280,8 @@ section {
 		padding: 0 5vw 0 5vw;}
 	#toggle-theme {
 		right: 0vw;}
+	.site-footer {
+		padding: 2rem 5vw;}
 }
 @media (max-width:800px){
 	section {
@@ -282,6 +293,8 @@ section {
 	#toggle-theme {
 		top: 1.5rem;
 		right: 2vw;}
+	.site-footer {
+		padding: 2rem 2vw;}
 }
 @media (max-width:600px){
 	section {
@@ -289,5 +302,7 @@ section {
 		margin-right: 1vw;}
 	.site-header {
 		padding: 0 1vw 0 1vw;}
+	.site-footer {
+		padding: 2rem 1vw;}
 	}
 
