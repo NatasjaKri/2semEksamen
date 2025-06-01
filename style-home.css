@@ -163,6 +163,10 @@
 	margin: 0 10vw;
 }
 #faculty-section h2{
+	text-align: center;}
+
+#faculty-section h4{
+	font-size: 1.8rem;
 	text-align: center;
 }
 #faculty-section .badge a {
@@ -207,8 +211,9 @@
 }
 
 .swiper {
-  width: 1100px;
-  height: 500px;
+  width: 70vw;
+  height: auto;
+	padding-bottom: 50px;
 }
 
 @media (max-width: 800px) {
