@@ -294,31 +294,40 @@ body {
 	border-bottom: solid 0.5rem var(--midnight-blue)
 }
 
-/* Faculty Section */
-.faculty-section {
-	background-color: orange;
-	padding: 50px 40px;
-	margin: 0 10vw;
-}
+/*Faculty Section */
 
-.faculty-section h2 {
-	text-align: center;
+.card-list .card-item .card-link {
+	user-select: none;
+	display: block;
+	background: transparent;
+	padding: 18px;
+	text-decoration: none;
 }
-
-.faculty {
-	display: flex;
-	justify-content: space-around;
-	align-items: center;
-	padding: 40px 0;
+.card-list .card-item {
+	list-style: none;
 }
-
-.circle {
-	width: 15vw;
-	Aspect-ratio: 1/1;
+.card-list .card-link .card-image {
+	width: 100%;
+	object-fit: cover;
 	border-radius: 50%;
-	margin: 0px 5px;
-	background-color: yellow;
+	border-width: 50px;
+	border-color: #FFFFFF;
+	border:10px solid white;
+	box-shadow: 0 2px 2px 1px gray;
 }
+.card-list .card-link .badge {
+	color: steelblue;
+	padding: 8px 16px;
+	margin: 16px 0 18px;
+	background: #FEFEFE;
+	width: fit-content;
+	border-radius: 50px;
+}
+.swiper {
+  width: 1024px;
+  height: 500px;
+}
+
 
 /* Footer */
 .site-footer {

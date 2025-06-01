@@ -10,6 +10,9 @@
 	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&display=swap" rel="stylesheet">
 
+	<!--Link til custom SwiperJS CSS -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+	
 	<link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -127,18 +130,119 @@
 			</div>	
 	</section>
 
+		
+		
 	<!-- Faculty Section -->
 	<section class="faculty-section">
-		<h2>This is a header</h2>
+		<h2>Advisory Board</h2>
+		<div class="container swiper">
+			<div class="card-wrapper">
+				<ul class="card-list swiper-wrapper">
+				
+<!--Liste af board profiler  -->	
+					<li class="card-item swiper-slide">
+						<a href="#" class="card-link">
+							<img src="img/FrederikSchreiber.png"  alt="Frederik Schreiber" class="card-image"/>
+							<p class="badge">Frederik Schreiber</p>
+							<h6 class="card-title">CEO at Slipgate Ironworks and 3D Realms</h6>
+						</a>
+					</li>
+					
+					<li class="card-item swiper-slide" id="Rebecca">
+						<a href="#" class="card-link">
+							<img src="img/BeccaLautner.jpg" alt="Rebecca Launter" class="card-image"/>
+							<p class="badge">Rebecca Launter</p>
+							<h6 class="card-title">CEO at Landfill Games</h6>
+						</a>
+					</li>
+					
+					<li class="card-item swiper-slide" id="Anders">
+						<a href="#" class="card-link">
+							<img src="img/AndersVang.jpg" alt="Anders Vang" class="card-image">
+							<p class="badge">Anders Vang</p>
+							<h6 class="card-title">Head of Education at Game Producer Program</h6>
+						</a>
+					</li>
+					
+					<li class="card-item swiper-slide">
+						<a href="#" class="card-link">
+							<img src="img/JonatanYde.png" alt="Jonatan Yde" class="card-image"/>
+							<p class="badge">Jonatan Yde</p>
+							<h6 class="card-title">Executive Director of Department at Dania Academy</h6>
+						</a>
+					</li>
+					
+					<li class="card-item swiper-slide">
+						<a href="#" class="card-link">
+							<img src="img/NinaKelstrupCPOFundayFactory.jpg" alt="Nina Kelstrup" class="card-image"/>
+							<p class="badge">Nina Kelstrup</p>
+							<h6 class="card-title">CPO at Funday Factory</h6>
+						</a>
+					</li>
+					
+					<li class="card-item swiper-slide">
+						<a href="#" class="card-link">
+							<img src="img/SørenLundgaard.png" alt="Søren Lundgaard" class="card-image"/>
+							<p class="badge">Søren Lundgaard</p>
+							<h6 class="card-title">SEO at Ghost Ship Games</h6>
+						</a>
+					</li>
+					
+					<li class="card-item swiper-slide">
+						<a href="#" class="card-link">
+							<img src="img/NielsAhlefeldtWetterberg.png" alt="Niels Wetterberg" class="card-image"/>
+							<p class="badge">Niels Wetterberg</p>
+							<h6 class="card-title">Director at Games Denmark</h6>
+						</a>
+					</li>
+					
+					<li class="card-item swiper-slide">
+						<a href="#" class="card-link">
+							<img src="img/DajanaDimovska.jpg" alt="Dajana Dimovska" class="card-image"/>
+							<p class="badge">Dajana Dimoskva</p>
+							<h6 class="card-title">Co-CEO at NapNok Games</h6>
+						</a>
+					</li>
+					
+				</ul>
+				
+				<!-- Swiper slider knapper-->
+				<div class="swiper-pagination"></div>
+				<div class="swiper-button-prev"></div>
+  				<div class="swiper-button-next"></div>
+				
+			</div>
+		</div>
+		
+		<!-- Linking swiperJS script-->
+		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+		<script src="faculty.js"></script>
+		
+		<!-- 
 		<div class="faculty">
-			<div class="circle"></div>
-			<div class="circle"></div>
-			<div class="circle"></div>
-			<div class="circle"></div>
+			<div class="circle">
+			    <img src="img/BeccaLautner.jpg" width="125" alt="Rebecca Launter"/> 
+			</div>			
+			<div class="circle">
+	    	  <img src="img/NinaKelstrupCPOFundayFactory.jpg" width="125" alt="Nina Kelstrup"/> 
+			</div>
+			<div class="circle">
+		    	<img src="img/AndersVang.jpg" width="125" alt="Anders Vang"/> 
+			</div>
+			<div class="circle">
+		    	<img src="img/JonatanYde.png" width="125" alt=""/>
+			</div>
 			<div class="circle"></div>
 		</div>
+-->
 	</section>
 
+		
+		
+		
+		
+		
+		
 	<!-- Footer -->
 	<footer class="site-footer">
 		<div class="footer-left">
