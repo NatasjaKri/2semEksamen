@@ -157,9 +157,8 @@ section {
 	background-color: var(--gun-blue);
 	color: var(--contrast);
 	border-radius: 0 0 20px 20px;
-	box-shadow: 0 5px 10px 2px var(--shadows-mode);
+	box-shadow: 0 5px 10px 2px var(--midnight-blue-mode);
 	z-index: 1;
-	
 }
 
 /*Glitter knap*/
