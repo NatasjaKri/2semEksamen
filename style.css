@@ -156,19 +156,19 @@ section {
 
 .logo-tag h2 {
 	font-family: audiowide;
-	font-size: 60px;
-	line-height: 60px;
+	font-size: 5vw;
+	line-height: 5vw;
 	color: var(--contrast);
 }
 
 .logo-tag img {
-	height: 150px;
-	margin-right: -50px;
+	width: 10vw;
+	margin-right: -4vw;
 }
 
 .nav-links a {
 	display: inline-block;
-	margin-left: 20px;
+	margin: 10px 0px 10px 20px;
 	text-decoration: none;
 	color: var(--powder-white);
 }
@@ -267,7 +267,7 @@ section {
 	border-radius: 20px;
 	align-items: center;
 	justify-content: center;
-	width: 450px;
+	width: 30vw;
 	padding: 50px;
 	outline: 4px solid var(--powder-white);
 	outline-offset: -25px;
