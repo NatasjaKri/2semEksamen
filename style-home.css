@@ -2,34 +2,37 @@
 /* CSS Document */
 
 /* Hero Section */
-.hero {
-	height: 500px;
+#hero {
+	height: auto;
+	min-height: 80vh;
 	background-image: radial-gradient(circle at left bottom, rgba(0, 0, 0, 0), var(--gun-blue) 70%), url("img/hero-image.jpg");
 	background-size: cover;
 	background-position: top;
 	display: flex;
 	justify-content: flex-start;
 	flex-direction: column;
-	padding: 40px 5vw;
-	border-radius: 25px;
-	box-shadow: 0 5px 10px 2px var(--midnight-blue-mode);
+	padding: 2rem 2rem;
+	border-radius: 1rem;
+	box-shadow: 0 0.2rem 1rem 0.3rem var(--shadows-mode);
 	color: var(--powder-white-const);
+	text-align: center;
 }
 
-.hero-content {
+#hero-content {
 	display: flex;
 	flex-direction: column;
 	align-items: flex-end;
 }
 
-.hero-text {
+#hero-text {
 	display: flex;
 	flex-direction: column;
-	padding: 40px 10px;
-	max-width: 400px;
+	padding: 2rem 1rem;
+	width: 32vw;
+	max-width: 60vw;
 	text-align: end;
-	border-radius: 5px;
-	gap: 20px 0px;
+	border-radius: 0.3rem;
+	gap: 1rem 0;
 }
 
 #hero-cta {
@@ -39,36 +42,32 @@
 }
 
 /* Content Section */
-.content-section {
+#content-section {
 	display: flex;
 	height: auto;
-	padding: 100px;
-	outline: 4px solid var(--powder-white-const);
-	outline-offset: -50px; 
+	outline: 0.2rem solid var(--powder-white-const);
+	outline-offset: -2rem; 
 	background-image: linear-gradient(var(--sky-blue), var(--midnight-blue-const));
-	border-radius: 20px;
+	border-radius: 1rem;
 }
 
 .split-left, .split-right {
 	flex: 1;
 	display: flex;
 	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-}
-
-.split-left {
+	align-items:flex-end;
+	justify-content: flex-start;
 	color: var(--powder-white-const);
 }
 .participants {
 	display: grid;
-	grid-template-columns: 5vw 1fr;
+	grid-template-columns: 5rem 1fr;
 	align-items: center;
-	margin: 20px;
+	margin: 0.5rem;
 }
 
 .icon {
-	width: 40px;
+	width: 2.3rem;
 }
 
 .split-right {
@@ -86,34 +85,35 @@
 	background-size: 15vw;
 	background-position: bottom right;
 	color: var(--midnight-blue-const);
-	gap: 10px;
+	gap: 0.5rem;
 	height: auto;
-	border-radius: 20px;
+	border-radius: 1rem;
 	align-items: center;
 	justify-content: center;
-	width: 30vw;
-	padding: 50px;
-	outline: 4px solid var(--powder-white-const);
-	outline-offset: -25px;
+	width: 33vw;
+	padding: 3rem;
+	outline: 0.2rem solid var(--powder-white-const);
+	outline-offset: -1rem;
 }
+
 
 .fact-item {
 	display: grid;
-	grid-template-columns: 7vw 1fr;
-	margin: 20px 0;
+	grid-template-columns: 6rem 1fr;
+	margin: 0.5rem 0;
 	align-items: start;
 }
 
 #fact-button {
 	color: var(--powder-white-const);
 	width: 70%;
-	margin-top: 40px;
+	margin-top: 1rem;
 }
 
 
 
 /* Partners Section*/
-.partners-section {
+#partners-section {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -129,17 +129,21 @@
 	display: flex;
 	justify-content: center;
 	align-items: center; 
-	margin-top: 40px;
+	margin-top: 2rem;
 }
 
 .logo-partner {
-	width: 10vw;
 	height: auto;
-	margin: 0 2vw;
+	min-height: 4rem;
+	max-height: 6rem;
+	width: auto;
+	min-width: 7rem;
+	max-width: 11rem;
+	margin: 0 1.5rem;
 }
 
 /* Quote Section */
-.quote-section {
+#quote-section {
 	height: auto;
 	background-color: var(--sky-blue);
 	color: var(--powder-white-const);
@@ -147,29 +151,11 @@
 	align-items: center;
 	justify-content: center;
 	text-align: center;
-	padding: 20px;
-	margin: 80px 0;
+	padding-top: 2rem;
+	padding-bottom: 2rem;
 	border-bottom: solid 0.5rem var(--midnight-blue-mode)
 }
 
-/* Faculty Section 
-.faculty-section {
-	background-color: orange;
-	padding: 50px 40px;
-	margin: 0 10vw;
-}
-
-.faculty-section h2 {
-	text-align: center;
-}
-
-.faculty {
-	display: flex;
-	justify-content: space-around;
-	align-items: center;
-	padding: 40px 0;
-}
-*/
 /*Faculty Section */
 .faculty-section{
 	padding: 50px 40px;
@@ -209,8 +195,8 @@
 	background: transparent;
 	width: fit-content;
 	border-radius: 50px;
-
 }
+
 .card-title {
 	text-align: center;
 }
