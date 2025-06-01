@@ -314,7 +314,7 @@ body {
 	opacity: 30%;}
 
 @media (max-width:1200px){
-	section {
+	.section-smal  {
 		margin-left: 7vw;
 		margin-right: 7vw;}
 	.site-header {
@@ -323,7 +323,7 @@ body {
 		padding: 2rem 7vw;}
 }
 @media (max-width:1000px){
-	section {
+	.section-smal {
 		margin-left: 5vw;
 		margin-right: 5vw;}
 	.site-header {
@@ -334,7 +334,7 @@ body {
 		padding: 2rem 5vw;}
 }
 @media (max-width:800px){
-	section {
+	.section-smal  {
 		margin-left: 2vw;
 		margin-right: 2vw;}
 	.site-header {
@@ -347,7 +347,7 @@ body {
 		padding: 2rem 2vw;}
 }
 @media (max-width:600px){
-	section {
+	.section-smal  {
 		margin-left: 1vw;
 		margin-right: 1vw;}
 	.site-header {

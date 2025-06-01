@@ -157,7 +157,7 @@
 }
 
 /*Faculty Section */
-.faculty-section{
+#faculty-section{
 	padding: 50px 40px;
 	margin: 0 10vw;
 }
@@ -166,7 +166,10 @@
 }
 .faculty-section .badge a {
 	text-align: center;
+	
 }
+
+
 .card-list .card-item .card-link {
 	user-select: none;
 	display: block;
@@ -186,23 +189,22 @@
 	border-width: 50px;
 	border-color: #FFFFFF;
 	border:10px solid white;
-	box-shadow: 0 3px 5px 1px black;
+	box-shadow: 0 2px 2px 1px gray;
 }
 .card-list .card-link .badge {
 	color: var(--gun-blue);
 	padding: 8px 16px;
 	margin: 16px 0 18px;
-	background: transparent;
+	background: #FEFEFE;
 	width: fit-content;
 	border-radius: 50px;
-}
 
+}
 .card-title {
 	text-align: center;
 }
 
 .swiper {
   width: 1024px;
-  height: 500px;
+  height: 470px;
 }
-
