@@ -195,7 +195,7 @@ section {
 	background-repeat: no-repeat;
   	pointer-events: none;
   	opacity: 0;
-  	animation: sparkleAnim 1s ease-out forwards;
+  	animation: sparkleAnim 1.5s ease-out forwards;
   	filter: drop-shadow(0 0 6px white);
   	z-index: 999;
 }
