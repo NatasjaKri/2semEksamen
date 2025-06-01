@@ -10,11 +10,13 @@
 :root {
 	--midnight-blue-mode: #08223B;
 	--midnight-blue-const: #08223B;
+	--powder-white-mode: #F1F5F9;
+	--powder-white-const: #F1F5F9;
 	--sky-blue: #7599BA;
 	--gun-blue: #2D4C60;
 	--steel-blue: #2F567A;
-	--powder-white-mode: #F1F5F9;
-	--powder-white-const: #F1F5F9;
+	--dove-blue: #9FC2CF;
+
 	--contrast: #F59E0B;}
 
 @media (prefers-color-scheme: dark) {
@@ -149,7 +151,7 @@ section {
 	background-color: var(--gun-blue);
 	color: var(--contrast);
 	border-radius: 0 0 20px 20px;
-	box-shadow: 0 5px 5px 5px var(--midnight-blue-const);
+	box-shadow: 0 5px 10px 2px var(--dove-blue);
 	z-index: 1;
 	
 }
@@ -196,12 +198,8 @@ section {
 	background-color: var(--sky-blue);
 }
 
-#toggle-theme svg {
-  display: none;}
-[data-theme="light"] #icon-moon {
-  display: inline;}
-[data-theme="dark"] #icon-sun {
-  display: inline;}
+[data-theme="light"] #icon-moon { display: inline; }
+[data-theme="dark"] #icon-sun { display: inline; }
 
 #toggle-theme {
   background: none;
@@ -226,8 +224,8 @@ section {
 	justify-content: flex-start;
 	flex-direction: column;
 	padding: 40px 5vw;
-	border-radius: 50px;
-	box-shadow: 0 5px 5px 5px var(--midnight-blue-mode);
+	border-radius: 25px;
+	box-shadow: 0 5px 10px 2px var(--dove-blue);
 	color: var(--powder-white-const);
 }
 
