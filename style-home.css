@@ -13,7 +13,7 @@
 	flex-direction: column;
 	padding: 2rem 2rem;
 	border-radius: 1rem;
-	box-shadow: 0 0.7rem 1rem 0.3rem var(--shadows-mode);
+	box-shadow: 0 0.4rem 0.8rem 0.3rem var(--shadows-mode);
 	color: var(--powder-white-const);
 	text-align: center;
 }
@@ -36,6 +36,7 @@
 	background-color: var(--contrast);
 	color: var(--powder-white);
 	padding: 15px;
+	margin-top: 2rem;
 }
 
 /* Content Section */
@@ -54,6 +55,9 @@
 	align-items:flex-end;
 	justify-content: flex-start;
 	color: var(--powder-white-const);
+}
+#content-section h2 {
+	color: var(--midnight-blue-const);
 }
 .participants {
 	display: grid;

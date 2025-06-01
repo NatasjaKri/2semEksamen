@@ -13,7 +13,7 @@
 	--midnight-blue-const: #08223B;
 	--powder-white-mode: #F1F5F9;
 	--powder-white-const: #F1F5F9;
-	--shadows-mode: #9FC2CF;
+	--shadows-mode: #08223B;
 	--black-mode: #000000;
 	--sky-blue: #7599BA;
 	--gun-blue: #2D4C60;
@@ -32,7 +32,7 @@
 [data-theme="light"] {
   	--powder-white-mode: #F1F5F9;
   	--midnight-blue-mode: #08223B;
-	--shadows-mode: #9FC2CF;
+	--shadows-mode: #08223B;
 	--black-mode: #FFFFFF;}
 [data-theme="dark"] {
 	--powder-white-mode: #08223B;
@@ -164,7 +164,7 @@ body {
 	background-color: var(--gun-blue);
 	color: var(--contrast);
 	border-radius: 0 0 1rem 1rem;
-	box-shadow: 0 0.2rem 1rem 0.3rem var(--shadows-mode);
+	box-shadow: 0 0.2rem 0.8rem 0.3rem var(--shadows-mode);
 	z-index: 1;
 }
 
