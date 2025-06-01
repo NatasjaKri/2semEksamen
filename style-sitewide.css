@@ -32,7 +32,7 @@
 [data-theme="light"] {
   	--powder-white-mode: #F1F5F9;
   	--midnight-blue-mode: #08223B;
-	--shadows-mode: #9FC2CF
+	--shadows-mode: #9FC2CF;
 	--black-mode: #FFFFFF;}
 [data-theme="dark"] {
 	--powder-white-mode: #08223B;
@@ -62,7 +62,7 @@ h1 {
 	line-height: 1.2;
 }
 h2 {
-	font-family: 'Space Grotesk', sans-serif;
+	font-family: 'Inter', sans-serif;
 	font-size: 2rem;
 	font-weight: 700;
 	line-height: 1.3;
@@ -73,12 +73,12 @@ h3 {
 	font-size: 1.5rem;
 	line-height: 1.4;}
 h4 {
-	font-family: 'Space Grotesk', sans-serif;
+	font-family: 'Inter', sans-serif;
 	font-size: 1.3rem;
 	font-weight: 700;
 	line-height: 1.4;}
 h5 {
-	font-family: 'Space Grotesk', sans-serif;
+	font-family: 'Inter', sans-serif;
 	font-size: 1.25rem;
 	font-weight: 700;
 	line-height: 1.4;}
