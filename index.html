@@ -10,8 +10,11 @@
 	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&display=swap" rel="stylesheet">
 
+	
 	<link rel="stylesheet" href="style-sitewide.css" />
 	<link rel="stylesheet" href="style-home.css" />
+<!--Link til custom SwiperJS CSS -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
 
 </head>
 <body>
@@ -146,16 +149,91 @@
 			</div>	
 	</section>
 
-	<!-- Faculty Section -->
+		<!-- Faculty Section -->
 	<section class="faculty-section">
-		<h2>This is a header</h2>
-		<div class="faculty">
-			<div class="circle"></div>
-			<div class="circle"></div>
-			<div class="circle"></div>
-			<div class="circle"></div>
-			<div class="circle"></div>
+		<h2>Advisory Board</h2>
+		<div class="faculty swiper">
+			<div class="card-wrapper">
+				<ul class="card-list swiper-wrapper">
+				
+					<!--Liste af profiler  -->
+					<li class="card-item swiper-slide" id="Rebecca">
+						<a class="card-link">
+							<img src="img/BeccaLautner.jpg" alt="Rebecca Launter" class="card-image"/>
+							<h2 class="badge">Rebecca Launter</h2>
+							<p class="card-title">CEO at Landfill Games</p>
+						</a>
+					</li>
+					
+					<li class="card-item swiper-slide" id="Anders">
+						<a class="card-link">
+							<img src="img/AndersVang.jpg" alt="Anders Vang" class="card-image">
+							<h4 class="badge">Anders Vang</h4>
+							<p class="card-title">Head of Education at Game Producer Program</p>
+						</a>
+					</li>
+					
+					<li class="card-item swiper-slide" id="Jonatan">
+						<a class="card-link">
+							<img src="img/JonatanYde.png" alt="Jonatan Yde" class="card-image"/>
+							<h2 class="badge">Jonatan Yde</h2>
+							<p class="card-title">Executive Director of Department at Dania Academy</p>
+						</a>
+					</li>
+					<li class="card-item swiper-slide" id="Frederik">
+						<a class="card-link">
+							<img src="img/FrederikSchreiber.png"  alt="Frederik Schreiber" class="card-image"/>
+							<h2 class="badge">Frederik Schreiber</h2>
+							<p class="card-title">CEO at Slipgate Ironworks and 3D Realms</p>
+						</a>
+					</li>
+					
+					<li class="card-item swiper-slide" id="Nina">
+						<a class="card-link">
+							<img src="img/NinaKelstrupCPOFundayFactory.jpg" alt="Nina Kelstrup" class="card-image"/>
+							<h2 class="badge">Nina Kelstrup</h2>
+							<p class="card-title">CPO at Funday Factory</p>
+						</a>
+					</li>
+					
+					<li class="card-item swiper-slide" id="Søren">
+						<a class="card-link">
+							<img src="img/SørenLundgaard.png" alt="Søren Lundgaard" class="card-image"/>
+							<h2 class="badge">Søren Lundgaard</h2>
+							<p class="card-title">SEO at Ghost Ship Games</p>
+						</a>
+					</li>
+					
+					<li class="card-item swiper-slide" id="Niels">
+						<a class="card-link">
+							<img src="img/NielsAhlefeldtWetterberg.png" alt="Niels Wetterberg" class="card-image"/>
+							<h2 class="badge">Niels Wetterberg</h2>
+							<p class="card-title">Director at Games Denmark</p>
+						</a>
+					</li>
+					
+					<li class="card-item swiper-slide" id="Dajana">
+						<a class="card-link">
+							<img src="img/DajanaDimovskaCEONapNok.jpg" alt="Dajana Dimovska" class="card-image"/>
+							<h2 class="badge">Dajana Dimoskva</h2>
+							<p class="card-title">Co-CEO at NapNok Games</p>
+						</a>
+					</li>
+					
+				</ul>
+				
+				<!-- Swiper slider knapper og bullets-->
+				<div class="swiper-pagination"></div>
+				<div class="swiper-button-prev"></div>
+  				<div class="swiper-button-next"></div>
+				
+			</div>
 		</div>
+		
+		<!-- Linking swiperJS script-->
+		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+		<script src="faculty.js"></script>
+	
 	</section>
 
 	<!-- Footer -->
