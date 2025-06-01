@@ -1,6 +1,6 @@
-new Swiper('.card-wrapper', {
+new Swiper('.swiper', {
   loop: true,
-	spaceBetween: 30,
+	spaceBetween: 20,
 
   // Pagination bullets
   pagination: {
@@ -20,13 +20,13 @@ new Swiper('.card-wrapper', {
 //Responsive breakpoints	
 	breakpoints:{
 		0:{
-			slidesPerView: 1
-		},
-		600:{
-			slidesPerView: 2
+			slidesPerView: 3
 		},
 		800:{
-			slidesPerView: 3
+			slidesPerView: 4
+		},
+		1100:{
+			slidesPerView: 5
 		},
 	}
 });

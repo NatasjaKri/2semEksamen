@@ -32,7 +32,7 @@
 [data-theme="light"] {
   	--powder-white-mode: #F1F5F9;
   	--midnight-blue-mode: #08223B;
-	--shadows-mode: #9FC2CF
+	--shadows-mode: #9FC2CF;
 	--black-mode: #FFFFFF;}
 [data-theme="dark"] {
 	--powder-white-mode: #08223B;
