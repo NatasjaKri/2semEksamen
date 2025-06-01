@@ -396,12 +396,64 @@ section {
 	display: flex;
 	justify-content: space-between;
 	padding: 20px 10vw;
-	background-color: indianred;
-	color: black;
+	min-height: 200px;
+	background-color: var(--gun-blue); /*ændret farven til at matche header*/
+	background-image: url("img/logoWatermarkMirror.png"), url("img/logoWatermark.png");
+	background-repeat: no-repeat;
+	background-position: left bottom, right bottom;
+	background-size: 70px;
+	color: var(--powder-white-const);
+	border-top: solid 0.5rem var(--midnight-blue-const)
 }
 
 .site-footer a {
-	color: yellow;
+	color: var(--powder-white-const);
 	text-decoration: none;
 	margin-left: 15px;
 }
+
+.footer-left h4 {
+	margin-bottom: 10px;
+}
+
+.footer-left a {
+	margin-left: 0px;
+}
+
+.footer-left p img {
+	width: 25px;
+	margin-right: 10px;
+	margin-bottom: 5px;
+  	vertical-align: middle;
+}
+
+.footer-right {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;   
+	row-gap: 70px;         
+}
+
+.footer-right img{
+	width: 45px;
+}
+
+.logo-footer {
+	display: flex;
+	align-items: center;
+	gap: 20px;
+}
+
+.dania-logo {
+	width: 120px !important;
+}
+
+.gamehub-logo {
+	width: 50px !important; 
+}
+
+.GP-watermark {
+	opacity: 30%;
+}
+
+
