@@ -46,7 +46,7 @@
 	display: flex;
 	height: auto;
 	outline: 0.2rem solid var(--powder-white-const);
-	outline-offset: -2rem; 
+	outline-offset: -2vw; 
 	background-image: linear-gradient(var(--sky-blue), var(--midnight-blue-const));
 	border-radius: 1rem;
 }
@@ -93,7 +93,7 @@
 	width: 33vw;
 	padding: 3rem;
 	outline: 0.2rem solid var(--powder-white-const);
-	outline-offset: -1rem;
+	outline-offset: -2vw;
 }
 
 
@@ -127,18 +127,19 @@
 
 .partners {
 	display: flex;
+	flex-direction: row;
 	justify-content: center;
 	align-items: center; 
-	margin-top: 2rem;
+	margin: 2rem;
 }
 
 .logo-partner {
 	height: auto;
-	min-height: 4rem;
-	max-height: 6rem;
+	min-height: 5vw;
+	max-height: 8vw;
 	width: auto;
-	min-width: 7rem;
-	max-width: 11rem;
+	min-width: 8vw;
+	max-width: 13vw;
 	margin: 0 1.5rem;
 }
 
@@ -207,4 +208,26 @@
 .swiper {
   width: 1024px;
   height: 470px;
+}
+
+@media (max-width: 800px) {
+  	#content-section {
+    	flex-direction: column;
+		align-items: center;  }
+  	.factbox {
+	 	width: 80vw;
+	  	background-size: 20vw;
+	 	margin-top: 3rem; 
+		padding-left: 5rem;
+		gap: 2rem;}
+	.factbox h6 {
+		font-size: 1.2rem;}
+	.factbox p {
+		font-size: 1.2rem;}
+	.fact-item {
+		display: grid;
+		grid-template-columns: 9rem 1fr;
+		margin: 0.5rem 0;
+		align-items: start;
+}
 }
