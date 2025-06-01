@@ -45,17 +45,21 @@
 
 html {font-size: 16px;}
 
-@media (max-width:800px){
+@media (max-width:1100px){
+	html {font-size: 15px;}}
+@media (max-width:1000px){
 	html {font-size: 14px;}}
-@media (max-width:600px){
+@media (max-width:900px){
+	html {font-size: 13px;}}
+@media (max-width:800px){
 	html {font-size: 12px;}}
+
 
 h1 {
 	font-family: 'Audiowide', sans-serif;
 	font-weight: normal;
 	font-size: 3rem;
 	line-height: 1.2;
-	text-align: center;
 }
 h2 {
 	font-family: 'Space Grotesk', sans-serif;
@@ -76,7 +80,7 @@ h4 {
 h5 {
 	font-family: 'Space Grotesk', sans-serif;
 	font-size: 1.25rem;
-	font-weight: 400;
+	font-weight: 700;
 	line-height: 1.4;}
 h6 {
 	font-family: 'Inter', sans-serif;
@@ -98,13 +102,11 @@ p {
 /*Knapper*/
 .menu-knap {
 	background-color: var(--midnight-blue-const);
-	border-radius: 10px;
+	border-radius: 0.5rem;
 	cursor: pointer;
 	display: inline-block;
-	font-weight: 600;
-	font-size: 18px;
-	padding: 10px 18px;
-	line-height: 50px;
+	padding: 0.5rem 1rem;
+	line-height: 2rem;
 	text-align: center;
 	text-decoration: none;
 	user-select: none;
@@ -113,13 +115,8 @@ p {
 }
 
 .menu-knap:hover {
-	box-shadow: black -6px 6px 0 0;
-	transform: translate(6px, -6px)
-}
-
-.menu-knap:active {
-	box-shadow: black -2px 2px 0 0;
-	transform: translate(2px, -2px);
+	box-shadow: black -0.3rem 0.2rem 0 0;
+	transform: translate(0.3rem, -0.2rem)
 }
 
 /*Generel styling*/
@@ -133,7 +130,10 @@ body {
 }
 
 section {
-	margin: 80px 10vw;
+	margin-top: 3rem;
+	margin-bottom: 0;
+	margin-left: 8vw;
+	margin-right: 8vw;
 }
 
 /*Scroll*/
@@ -150,72 +150,62 @@ section {
 
 /* Header */
 .site-header {
-	display: flex;
-	justify-content: space-between;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
 	align-items: center;
-	padding: 10px 10vw;
+	padding: 0.5rem 8vw 0.5rem 8vw;
 	background-color: var(--gun-blue);
 	color: var(--contrast);
-	border-radius: 0 0 20px 20px;
-	box-shadow: 0 5px 10px 2px var(--shadows-mode);
+	border-radius: 0 0 1rem 1rem;
+	box-shadow: 0 0.3rem 0.5rem 0.1rem var(--shadows-mode);
 	z-index: 1;
-	
 }
 
 .logo-tag {
 	display: flex;
 	align-items: center;
-	transition: transform 0.1s ease, box-shadow 0.1s ease;
-	padding: 5px;
-	border-radius: 10px;
-}
-
+	transition: transform 0.1s ease, box-shadow 0.1s ease;}
 .logo-tag:hover {
-	box-shadow: black 6px 6px 0 0;
 	transform: translate(-6px, -6px);
-	cursor: pointer;
-}
-
-.logo-tag:active {
-	box-shadow: black 2px 2px 0 0;
-	transform: translate(-2px, -2px);
-}
-
-.logo-tag h2 {
-	font-family: audiowide;
-	font-size: 3.5vw;
-	line-height: 3.8vw;
+	cursor: pointer;}
+.logo-tag h1 {
 	color: var(--contrast);
-}
-
+	line-height: 2.6rem;}
 .logo-tag img {
-	width: 8vw;
-	margin-right: -3.5vw;
-}
+	height: 6rem;
+	margin-right: -2rem;}
 
+.nav-links {
+	display: flex;
+	flex-direction: row-reverse;}
 .nav-links a {
 	display: inline-block;
-	margin: 10px 0px 10px 20px;
-	text-decoration: none;
-	color: var(--powder-white-const);
-}
-
+	margin-right: 15px;
+	color: var(--powder-white-const);}
 #active {
-	background-color: var(--sky-blue);
-}
+	background-color: var(--sky-blue);}
+
+/*dark-mode*/
 
 [data-theme="light"] #icon-moon { display: inline; }
 [data-theme="dark"] #icon-sun { display: inline; }
 
 #toggle-theme {
-  background: none;
-  border: none;
-  cursor: pointer;
-  padding: 0.5rem;
-  color: var(--contrast);
-  transition: transform 0.2s ease;}
+	position: fixed;
+	display:flex;
+	flex-direction: row-reverse;
+	top:2.5rem;
+	right: 2vw;
+	margin-right:15px;
+  	background: none;
+  	cursor: pointer;
+	border: none;
+  	margin-left: 1rem;
+  	color: var(--contrast);
+  	transition: transform 0.2s ease;
+	z-index: 100;}
 #toggle-theme:hover {
-  transform: rotate(25deg);}
+  	transform: rotate(25deg);}
 
 
 
@@ -223,7 +213,7 @@ section {
 .site-footer {
 	display: flex;
 	justify-content: space-between;
-	padding: 20px 10vw;
+	padding: 2rem 10vw;
 	min-height: 200px;
 	background-color: var(--gun-blue); /*ændret farven til at matche header*/
 	background-image: url("img/logoWatermarkMirror.png"), url("img/logoWatermark.png");
@@ -266,4 +256,38 @@ section {
 .GP-watermark {
 	opacity: 30%;}
 
+@media (max-width:1200px){
+	section {
+		margin-left: 7vw;
+		margin-right: 7vw;}
+	.site-header {
+		padding: 0 7vw 0 7vw;}
+}
+@media (max-width:1000px){
+	section {
+		margin-left: 5vw;
+		margin-right: 5vw;}
+	.site-header {
+		padding: 0 5vw 0 5vw;}
+	#toggle-theme {
+		right: 0vw;}
+}
+@media (max-width:800px){
+	section {
+		margin-left: 2vw;
+		margin-right: 2vw;}
+	.site-header {
+		align-items: baseline;
+		padding: 1rem 2vw 1rem 2vw;}
+	#toggle-theme {
+		top: 1.5rem;
+		right: 2vw;}
+}
+@media (max-width:600px){
+	section {
+		margin-left: 1vw;
+		margin-right: 1vw;}
+	.site-header {
+		padding: 0 1vw 0 1vw;}
+	}
 
