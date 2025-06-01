@@ -36,7 +36,8 @@ h2 {
 	font-family: 'Space Grotesk', sans-serif;
 	font-size: 2rem;
 	font-weight: 700;
-	line-height: 1.3;}
+	line-height: 1.3;
+}
 h3 {
 	font-family: 'Audiowide', sans-serif;
 	font-weight: normal;
@@ -83,13 +84,18 @@ p {
 	text-decoration: none;
 	user-select: none;
 	touch-action: manipulation;
-	transition: transform 0.1s ease, box-shadow 0.1s ease;}
+	transition: transform 0.1s ease, box-shadow 0.1s ease;
+}
+
 .menu-knap:hover {
 	box-shadow: black -6px 6px 0 0;
-	transform: translate(6px, -6px)}
+	transform: translate(6px, -6px)
+}
+
 .menu-knap:active {
 	box-shadow: black -2px 2px 0 0;
-	transform: translate(2px, -2px);}
+	transform: translate(2px, -2px);
+}
 
 /*Generel styling*/
 body {
@@ -97,7 +103,10 @@ body {
  	grid-template-rows: auto 1fr auto;
  	height: 100vh;
 	width: 100vw;
-	background-color: var(--powder-white);
+}
+
+section {
+	margin: 80px 10vw;
 }
 
 /*Scroll*/
@@ -122,37 +131,44 @@ body {
 	color: var(--contrast);
 	border-radius: 0 0 20px 20px;
 	box-shadow: 0 5px 5px 5px var(--midnight-blue);
-	z-index: 1;	}
+	z-index: 1;
+	
+}
 
 .logo-tag {
 	display: flex;
 	align-items: center;
 	transition: transform 0.1s ease, box-shadow 0.1s ease;
 	padding: 5px;
-	border-radius: 10px;}
+	border-radius: 10px;
+}
+
 .logo-tag:hover {
 	box-shadow: black 6px 6px 0 0;
 	transform: translate(-6px, -6px);
-	cursor: pointer;}
+	cursor: pointer;
+}
+
 .logo-tag:active {
 	box-shadow: black 2px 2px 0 0;
-	transform: translate(-2px, -2px);}
+	transform: translate(-2px, -2px);
+}
 
 .logo-tag h2 {
 	font-family: audiowide;
-	font-size: 45px;
-	line-height: 46px;
+	font-size: 5vw;
+	line-height: 5vw;
 	color: var(--contrast);
 }
 
 .logo-tag img {
-	height: 100px;
-	margin-right: -40px;
+	width: 10vw;
+	margin-right: -4vw;
 }
 
 .nav-links a {
 	display: inline-block;
-	margin-left: 20px;
+	margin: 10px 0px 10px 20px;
 	text-decoration: none;
 	color: var(--powder-white);
 }
@@ -170,10 +186,10 @@ body {
 	display: flex;
 	justify-content: flex-start;
 	flex-direction: column;
-	margin: 40px 10vw;
 	padding: 40px 5vw;
 	border-radius: 50px;
 	box-shadow: 0 5px 5px 5px var(--midnight-blue);
+	color: var(--powder-white);
 }
 
 .hero-content {
@@ -201,75 +217,102 @@ body {
 /* Content Section */
 .content-section {
 	display: flex;
-	flex-direction: column;
 	height: auto;
-	margin: 0 10vw;
+	padding: 100px;
+	outline: 4px solid var(--powder-white);
+	outline-offset: -50px; 
+	background-image: linear-gradient(var(--sky-blue), var(--midnight-blue));
+	border-radius: 20px;
+}
+
+.split-left, .split-right {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.split-left {
+	color: var(--powder-white);
+}
+.participants {
+	display: grid;
+	grid-template-columns: 5vw 1fr;
+	align-items: center;
+	margin: 20px;
+}
+
+.icon {
+	width: 40px;
+}
+
+.split-right {
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-end;
+}
+
+.factbox {
+	display: flex;
+	flex-direction: column;
+	background-color: var(--contrast);
+	background-image: linear-gradient(rgba(245, 158, 11, 0.5), rgba(245, 158, 11, 0.5)), url("img/Logo_NoLine_White.svg");
+	background-repeat: no-repeat;
+	background-size: 15vw;
+	background-position: bottom right;
+	color: var(--midnight-blue);
+	gap: 10px;
+	height: auto;
+	border-radius: 20px;
+	align-items: center;
+	justify-content: center;
+	width: 30vw;
+	padding: 50px;
+	outline: 4px solid var(--powder-white);
+	outline-offset: -25px;
+
+}
+
+.fact-item {
+	display: grid;
+	grid-template-columns: 7vw 1fr;
+	margin: 20px 0;
+	align-items: start;
+}
+
+#fact-button {
+	color: var(--powder-white);
+	width: 70%;
+	margin-top: 40px;
+}
+
+
+
+/* Partners Section*/
+.partners-section {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	color: var(--midnight-blue);
+}
+
+#partner-button {
+	color: var(--powder-white);
 }
 
 .partners {
 	display: flex;
 	justify-content: center;
-	padding: 40px 0;
-	background-color: coral;
+	align-items: center; 
+	margin-top: 40px;
 }
 
-.split-section {
-  display: flex;
-  height: auto; /* så sektionen vokser efter indhold */
+.logo-partner {
+	width: 10vw;
+	height: auto;
+	margin: 0 2vw;
 }
-
-.split-left, .split-right {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.split-left {
-  background-color: var(--steel-blue);
-  color: var(--powder-white);
-}
-.participants {
-  display: grid;
-  grid-template-columns: 3rem 1fr;
-  column-gap: 1rem;
-  align-items: start;
-}
-
-.split-right {
-  display: flex;
-  flex-direction: column;
-}
-
-.factbox {
-  display: flex;
-  flex: 0 0 auto;
-  flex-direction: column;
-  background-color: pink;
-  gap: 1rem;
-  height: auto;
-  align-items: left;
-  justify-content: center;
-  width: 100%;
-}
-
-.fact-item {
-  display: grid;
-  grid-template-columns: 120px 1fr;
-  column-gap: 1rem;
-  align-items: start;
-}
-
-.content-2 {
-  display: flex;
-  flex-direction: column;
-  background-color: greenyellow;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-}
-
 
 /* Quote Section */
 .quote-section {
@@ -315,66 +358,15 @@ body {
 	display: flex;
 	justify-content: space-between;
 	padding: 20px 10vw;
-	min-height: 200px;
-	background-color: var(--gun-blue); /*ændret farven til at matche header*/
-	background-image: url("img/logoWatermarkMirror.png"), url("img/logoWatermark.png");
-	background-repeat: no-repeat;
-	background-position: left bottom, right bottom;
-	background-size: 70px;
-	color: var(--powder-white);
-	border-top: solid 0.5rem var(--midnight-blue)
+	background-color: indianred;
+	color: black;
 }
 
 .site-footer a {
-	color: var(--powder-white);
+	color: yellow;
 	text-decoration: none;
 	margin-left: 15px;
 }
-
-.footer-left h4 {
-	margin-bottom: 10px;
-}
-
-.footer-left a {
-	margin-left: 0px;
-}
-
-.footer-left p img {
-	width: 25px;
-	margin-right: 10px;
-	margin-bottom: 5px;
-  	vertical-align: middle;
-}
-
-.footer-right {
-	display: flex;
-	flex-direction: column;
-	align-items: flex-end;   /* right-align *all* children */
-	row-gap: 70px;           /* space between icons row & logos row */
-}
-
-.footer-right img{
-	width: 45px;
-}
-
-.logo-footer {
-	display: flex;
-	align-items: center;
-	gap: 20px;
-}
-
-.dania-logo {
-	width: 120px !important;
-}
-
-.gamehub-logo {
-	width: 50px !important; 
-}
-
-.GP-watermark {
-	opacity: 30%;
-}
-
 
 @media (max-width:800px){
 }
