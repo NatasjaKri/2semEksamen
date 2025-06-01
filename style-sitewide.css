@@ -270,6 +270,7 @@ body {
 .site-footer {
 	display: flex;
 	justify-content: space-between;
+	margin-top: 3rem;
 	padding: 2rem 8vw;
 	min-height: 200px;
 	background-color: var(--gun-blue); /*ændret farven til at matche header*/

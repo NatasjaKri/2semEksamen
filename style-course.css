@@ -2,18 +2,21 @@
 /* CSS Document */
 
 /* Hero Section */
-.hero {
-	height: 500px;
+/* Hero Section */
+#hero {
+	height: auto;
+	min-height: 65vh;
 	background-image: radial-gradient(circle at left bottom, rgba(0, 0, 0, 0), var(--gun-blue) 70%), url("img/hero-image.jpg");
 	background-size: cover;
 	background-position: top;
 	display: flex;
 	justify-content: flex-start;
 	flex-direction: column;
-	padding: 40px 5vw;
-	border-radius: 25px;
-	box-shadow: 0 5px 10px 2px var(--shadows-mode);
+	padding: 2rem 2rem;
+	border-radius: 1rem;
+	box-shadow: 0 0.2rem 1rem 0.3rem var(--shadows-mode);
 	color: var(--powder-white-const);
+	text-align: center;
 }
 
 .hero-content {

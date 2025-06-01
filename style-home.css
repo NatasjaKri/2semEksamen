@@ -4,7 +4,7 @@
 /* Hero Section */
 #hero {
 	height: auto;
-	min-height: 80vh;
+	min-height: 65vh;
 	background-image: radial-gradient(circle at left bottom, rgba(0, 0, 0, 0), var(--gun-blue) 70%), url("img/hero-image.jpg");
 	background-size: cover;
 	background-position: top;
