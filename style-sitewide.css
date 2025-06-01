@@ -168,6 +168,56 @@ body {
 	z-index: 1;
 }
 
+/*Glitter knap*/
+/*bobble sparkles  { /*henviser til en div i javascriptet
+  	position: absolute;
+  	width: 6px;
+  	height: 6px;
+  	background: white;
+  	border-radius: 50%;
+  	pointer-events: none; /*sikre at det ikke blokerer click
+  	opacity: 0; /* + animation = fader ud
+  	animation: sparkleAnim 0.8s ease-out forwards;
+	z-index: 10;
+}
+
+@keyframes sparkleAnim {
+  	0% { /*starter småt og vokser
+    	transform: scale(0.5);
+    	opacity: 1;
+  	}
+  	100% { /*vokser og fader ud
+    	transform: scale(1.5);
+    	opacity: 0;
+  	}
+}*/
+
+/*princess sparkles*/.sparkle {
+  	position: absolute;
+  	width: 10px;
+  	height: 10px;
+  	background-image: url("img/sparkle.svg");
+	background-size: contain;
+	background-repeat: no-repeat;
+  	pointer-events: none;
+  	opacity: 0;
+  	animation: sparkleAnim 1.5s ease-out forwards;
+  	filter: drop-shadow(0 0 6px white);
+  	z-index: 999;
+}
+
+@keyframes sparkleAnim {
+  0% {
+    transform: scale(0.5) rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1.8) rotate(180deg);
+    opacity: 0;
+  }
+}
+
+/*Logo*/
 .logo-tag {
 	display: flex;
 	align-items: center;

@@ -37,7 +37,7 @@
 
 #hero-cta {
 	background-color: var(--contrast);
-	color: var(--midnight-blue-const);
+	color: var(--powder-white);
 	padding: 15px;
 }
 
@@ -95,12 +95,7 @@
 	outline: 0.2rem solid var(--powder-white-const);
 	outline-offset: -1rem;
 }
-@media (max-width:600px){
-	.factbox {
-	width: 80vw;
-}
-	
-}
+
 
 .fact-item {
 	display: grid;
@@ -161,29 +156,53 @@
 	border-bottom: solid 0.5rem var(--midnight-blue-mode)
 }
 
-/* Faculty Section */
-.faculty-section {
-	background-color: orange;
+/*Faculty Section */
+.faculty-section{
 	padding: 50px 40px;
 	margin: 0 10vw;
 }
+.faculty-section h2{
+	text-align: center;
+}
+.faculty-section .badge a {
+	text-align: center;
+}
+.card-list .card-item .card-link {
+	user-select: none;
+	display: block;
+	background: transparent;
+	padding: 18px;
+	text-decoration: none;
+	justify-content: center;
+	
+}
+.card-list .card-item {
+	list-style: none;
+}
+.card-list .card-link .card-image {
+	width: 100%;
+	object-fit: cover;
+	border-radius: 50%;
+	border-width: 50px;
+	border-color: #FFFFFF;
+	border:10px solid white;
+	box-shadow: 0 3px 5px 1px black;
+}
+.card-list .card-link .badge {
+	color: var(--gun-blue);
+	padding: 8px 16px;
+	margin: 16px 0 18px;
+	background: transparent;
+	width: fit-content;
+	border-radius: 50px;
+}
 
-.faculty-section h2 {
+.card-title {
 	text-align: center;
 }
 
-.faculty {
-	display: flex;
-	justify-content: space-around;
-	align-items: center;
-	padding: 40px 0;
-}
-
-.circle {
-	width: 15vw;
-	Aspect-ratio: 1/1;
-	border-radius: 50%;
-	margin: 0px 5px;
-	background-color: yellow;
+.swiper {
+  width: 1024px;
+  height: 500px;
 }
 
