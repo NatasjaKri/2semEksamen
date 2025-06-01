@@ -83,18 +83,13 @@ p {
 	text-decoration: none;
 	user-select: none;
 	touch-action: manipulation;
-	transition: transform 0.1s ease, box-shadow 0.1s ease;
-}
-
+	transition: transform 0.1s ease, box-shadow 0.1s ease;}
 .menu-knap:hover {
 	box-shadow: black -6px 6px 0 0;
-	transform: translate(6px, -6px)
-}
-
+	transform: translate(6px, -6px)}
 .menu-knap:active {
 	box-shadow: black -2px 2px 0 0;
-	transform: translate(2px, -2px);
-}
+	transform: translate(2px, -2px);}
 
 /*Generel styling*/
 body {
@@ -102,7 +97,9 @@ body {
  	grid-template-rows: auto 1fr auto;
  	height: 100vh;
 	width: 100vw;
+	background-color: var(--powder-white);
 }
+
 /*Scroll*/
 .scroll-area {
  	overflow-y: auto;
@@ -125,39 +122,32 @@ body {
 	color: var(--contrast);
 	border-radius: 0 0 20px 20px;
 	box-shadow: 0 5px 5px 5px var(--midnight-blue);
-	z-index: 1;
-	
-}
+	z-index: 1;	}
 
 .logo-tag {
 	display: flex;
 	align-items: center;
 	transition: transform 0.1s ease, box-shadow 0.1s ease;
 	padding: 5px;
-	border-radius: 10px;
-}
-
+	border-radius: 10px;}
 .logo-tag:hover {
 	box-shadow: black 6px 6px 0 0;
 	transform: translate(-6px, -6px);
-	cursor: pointer;
-}
-
+	cursor: pointer;}
 .logo-tag:active {
 	box-shadow: black 2px 2px 0 0;
-	transform: translate(-2px, -2px);
-}
+	transform: translate(-2px, -2px);}
 
 .logo-tag h2 {
 	font-family: audiowide;
-	font-size: 60px;
-	line-height: 60px;
+	font-size: 45px;
+	line-height: 46px;
 	color: var(--contrast);
 }
 
 .logo-tag img {
-	height: 150px;
-	margin-right: -50px;
+	height: 100px;
+	margin-right: -40px;
 }
 
 .nav-links a {
