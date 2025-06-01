@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -11,6 +11,8 @@
 	<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&display=swap" rel="stylesheet">
 
 	<link rel="stylesheet" href="style.css" />
+	
+
 </head>
 <body>
 
@@ -26,6 +28,14 @@
  			<a href="#" class="menu-knap"><h4>About us</h4></a>
  			<a href="#" class="menu-knap"><h4>Apply</h4></a>
 		</nav>
+		
+		<button id="toggle-theme" aria-label="Toggle dark mode">
+  			<svg id="icon-sun" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+    			<path d="M12 4.5a1 1 0 0 1 1-1h0a1 1 0 0 1 1 1v1a1 1 0 0 1-2 0v-1zm0 14a1 1 0 0 1 1-1h0a1 1 0 0 1 1 1v1a1 1 0 0 1-2 0v-1zM4.5 11a1 1 0 0 1 1-1h1a1 1 0 1 1 0 2h-1a1 1 0 0 1-1-1zm14 0a1 1 0 0 1 1-1h1a1 1 0 1 1 0 2h-1a1 1 0 0 1-1-1zM6.64 6.64a1 1 0 0 1 1.41 0l.71.71a1 1 0 1 1-1.41 1.41l-.71-.71a1 1 0 0 1 0-1.41zm10.6 10.6a1 1 0 0 1 1.41 0l.71.71a1 1 0 0 1-1.41 1.41l-.71-.71a1 1 0 0 1 0-1.41zM6.64 17.36a1 1 0 0 1 1.41 1.41l-.71.71a1 1 0 0 1-1.41-1.41l.71-.71zm10.6-10.6a1 1 0 0 1 1.41 1.41l-.71.71a1 1 0 0 1-1.41-1.41l.71-.71zM12 8a4 4 0 1 1 0 8 4 4 0 0 1 0-8z"/>  </svg>
+			<svg id="icon-moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+   		 		<path d="M21 12.79A9 9 0 1 1 11.21 3a7 7 0 1 0 9.79 9.79z"/>  </svg>
+</button>
+
 	</header>
 	
 	<!-- Scroll-area for alt mellem Header og footer -->
@@ -192,4 +202,6 @@
 	</main>	
 	
 </body>
+	
+	<script src="darkmode.js"></script>	
 </html>
