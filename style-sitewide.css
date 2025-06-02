@@ -130,13 +130,13 @@ body {
 }
 
 .section-smal {
-	margin-top: 3rem;
+	margin-top: 5rem;
 	margin-bottom: 0;
 	margin-left: 8vw;
 	margin-right: 8vw;
 }
 .section-wide {
-	margin-top: 3rem;
+	margin-top: 5rem;
 	margin-bottom: 0;
 	margin-left: 0;
 	margin-right: 0;
@@ -192,7 +192,8 @@ body {
   	}
 }*/
 
-/*princess sparkles*/.sparkle {
+/*princess sparkles*/
+.sparkle {
   	position: absolute;
   	width: 10px;
   	height: 10px;
