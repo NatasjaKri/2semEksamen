@@ -26,7 +26,7 @@
 	display: flex;
 	flex-direction: column;
 	padding: 2rem 1rem;
-	width: 32vw;
+	width: 40vw;
 	max-width: 60vw;
 	text-align: end;
 	border-radius: 0.3rem;
@@ -56,10 +56,11 @@
 	justify-content: flex-start;
 	color: var(--powder-white-const);
 }
-#content-section h2 {
+#content-section h3 {
 	color: var(--midnight-blue-const);
 }
-.participants {
+
+.tools, .participants {
 	display: grid;
 	grid-template-columns: 5rem 1fr;
 	align-items: center;
@@ -95,8 +96,10 @@
 	align-items: start;
 }
 #fact-button {
+	background-color: var(--midnight-blue-const);
 	color: var(--powder-white-const);
-	width: 70%;
+	width: auto;
+	padding: 0.5rem 3rem 0.5rem 3rem;
 	margin-top: 1rem;
 }
 
@@ -108,11 +111,15 @@
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	text-align: center;
 	color: var(--midnight-blue-mode);
 }
 #partner-button {
-	color: var(--powder-white-mode);
 	background-color: var(--midnight-blue-mode);
+	color: var(--powder-white-mode);
+	width: auto;
+	padding: 0.5rem 3rem 0.5rem 3rem;
+	margin-top: 1rem;
 }
 .partners {
 	display: flex;
@@ -151,13 +158,11 @@
 	padding-top: 3rem;
 	margin: 0 1rem;
 	align-items: center;
+	text-align: center;
 	padding: 3rem;
 	position: relative;
 }
 
-#faculty-section h2{
-	text-align: center;
-	font-family: 'Audiowide', sans-serif;}
 #faculty-section h4{
 	font-size: 1rem;
 	text-align: center;}
@@ -187,7 +192,7 @@
 	background: transparent;
 	color: var(--powder-white-mode);
 	background-color: var(--midnight-blue-mode);
-	border-radius: 3rem;
+	border-radius: 0.5rem;
 	white-space: nowrap;
   	overflow: hidden;
   	text-overflow: ellipsis;
@@ -230,10 +235,6 @@
 	 	margin-top: 3rem; 
 		padding-left: 5rem;
 		gap: 2rem;}
-	.factbox h6 {
-		font-size: 1.2rem;}
-	.factbox p {
-		font-size: 1.2rem;}
 	.fact-item {
 		display: grid;
 		grid-template-columns: 9rem 1fr;
