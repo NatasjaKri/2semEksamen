@@ -188,7 +188,7 @@ body {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	padding: 1rem 5vw;
+	padding: 0.5rem 8vw;
 	background-color: var(--gun-blue);
 	color: var(--contrast);
 	border-radius: 0 0 2vw 2vw;
@@ -243,24 +243,26 @@ body {
 }
 
 .logo-tag h2 {
-	font-family: audiowide;
-	font-size: 1rem;
-	line-height: 1rem;
-	color: black;
+	color: var(--contrast);
+	line-height: 2.6rem;;
 }
 
 .logo-tag img {
-	height: 150px;
-	margin-right: -50px;
+	height: 6rem;
+	margin-right: -2rem;
 }
 
 .nav-links {
 	display: flex;
 	flex-direction: row-reverse;}
+
 .nav-links a {
-	display: inline-block;
-	margin-right: 15px;
-	color: var(--powder-white-const);}
+	margin: 0 15px;
+	text-decoration: none;
+	color: var(--powder-white-const);
+	font-weight: bold;
+}
+
 #active {
 	background-color: var(--sky-blue);}
 
