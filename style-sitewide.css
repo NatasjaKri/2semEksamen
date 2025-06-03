@@ -102,7 +102,7 @@ p {
 /*Knapper*/
 .menu-knap {
 	background-color: var(--midnight-blue-const);
-	border-radius: 0.5rem;
+	border-radius: 1vw;
 	cursor: pointer;
 	display: inline-block;
 	padding: 0.5rem 1rem;
@@ -115,8 +115,13 @@ p {
 }
 
 .menu-knap:hover {
-	box-shadow: black -0.3rem 0.2rem 0 0;
-	transform: translate(0.3rem, -0.2rem)
+	box-shadow: black 6px 6px 4px 0;
+	transform: translate(-6px, -6px)
+}
+
+.shadow-button:active {
+	box-shadow: black -2px 2px 0 0;
+	transform: translate(-2px, 2px);
 }
 
 /*Generel styling*/
@@ -155,18 +160,7 @@ body {
     scrollbar-width: none;}
 }
 
-/* Header */
-.site-header {
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	align-items: center;
-	padding: 0.5rem 8vw 0.5rem 8vw;
-	background-color: var(--gun-blue);
-	color: var(--contrast);
-	border-radius: 0 0 1rem 1rem;
-	box-shadow: 0 0.2rem 0.8rem 0.3rem var(--shadows-mode);
-	z-index: 1;
-}
+
 
 /*Glitter knap*/
 /*bobble sparkles  { /*henviser til en div i javascriptet
@@ -191,6 +185,20 @@ body {
     	opacity: 0;
   	}
 }*/
+
+
+/* Header */
+.site-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1rem 5vw;
+	background-color: var(--gun-blue);
+	color: var(--contrast);
+	border-radius: 0 0 2vw 2vw;
+	box-shadow: 6px 6px 4px black;
+	z-index: 1;
+}
 
 /*princess sparkles*/
 .sparkle {
@@ -222,16 +230,33 @@ body {
 .logo-tag {
 	display: flex;
 	align-items: center;
-	transition: transform 0.1s ease, box-shadow 0.1s ease;}
+	transition: transform 0.1s ease, box-shadow 0.1s ease;
+	padding: 0.5rem;
+	border-radius: 50px;
+}
+
 .logo-tag:hover {
+	box-shadow: black 6px 6px 4px 0;
 	transform: translate(-6px, -6px);
-	cursor: pointer;}
-.logo-tag h1 {
-	color: var(--contrast);
-	line-height: 2.6rem;}
+	cursor: pointer;
+}
+
+.logo-tag:active {
+	box-shadow: black 2px 2px 0 0;
+	transform: translate(-2px, -2px);
+}
+
+.logo-tag h2 {
+	font-family: audiowide;
+	font-size: 1rem;
+	line-height: 1rem;
+	color: black;
+}
+
 .logo-tag img {
-	height: 6rem;
-	margin-right: -2rem;}
+	height: 150px;
+	margin-right: -50px;
+}
 
 .nav-links {
 	display: flex;
@@ -280,7 +305,8 @@ body {
 	background-position: left bottom, right bottom;
 	background-size: 70px;
 	color: var(--powder-white-const);
-	border-top: solid 0.5rem var(--midnight-blue-const)}
+	border-radius: 2vw 2vw 0 0;
+	box-shadow: 6px -6px 4px black;}
 
 .site-footer a {
 	color: var(--powder-white-const);

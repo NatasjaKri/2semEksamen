@@ -12,8 +12,8 @@
 	justify-content: flex-start;
 	flex-direction: column;
 	padding: 2rem 2rem;
-	border-radius: 1rem;
-	box-shadow: 0 0.4rem 0.8rem 0.3rem var(--shadows-mode);
+	border-radius: 2vw;
+	box-shadow: 6px 6px 4px black;
 	color: var(--powder-white-const);
 	text-align: center;
 }
@@ -46,7 +46,8 @@
 	outline: 0.2rem solid var(--powder-white-const);
 	outline-offset: -2vw; 
 	background-image: linear-gradient(var(--sky-blue), var(--midnight-blue-const));
-	border-radius: 1rem;
+	border-radius: 2vw;
+	box-shadow: 6px 6px 4px black;
 }
 .split-left, .split-right {
 	flex: 1;
@@ -81,7 +82,7 @@
 	color: var(--midnight-blue-const);
 	gap: 0.5rem;
 	height: auto;
-	border-radius: 1rem;
+	border-radius: 2vw;
 	align-items: center;
 	justify-content: center;
 	width: 33vw;
@@ -150,11 +151,12 @@
 	text-align: center;
 	padding-top: 2rem;
 	padding-bottom: 2rem;
-	border-bottom: solid 0.5rem var(--midnight-blue-mode)
+	border-radius: 2vw;
+	box-shadow: 6px 6px 4px black;
 }
 
 /*Faculty Section */
-#faculty-section{
+#faculty-section {
 	padding-top: 3rem;
 	margin: 0 1rem;
 	align-items: center;
@@ -163,7 +165,7 @@
 	position: relative;
 }
 
-#faculty-section h4{
+#faculty-section h4 {
 	font-size: 1rem;
 	text-align: center;}
 #faculty-section a {
