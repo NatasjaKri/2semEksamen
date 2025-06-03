@@ -13,8 +13,7 @@
 	--midnight-blue-const: #08223B;
 	--powder-white-mode: #F1F5F9;
 	--powder-white-const: #F1F5F9;
-	--shadows-mode: #08223B;
-	--black-mode: #000000;
+	--shadows-mode: #7599BA;
 	--sky-blue: #7599BA;
 	--gun-blue: #2D4C60;
 	--steel-blue: #2F567A;
@@ -25,20 +24,17 @@
   :root {
     --powder-white-mode: #08223B;
     --midnight-blue-mode: #F1F5F9;
-	--shadows-mode: #3F647A;
-	--black-mode: #FFFFFF;}
+	--shadows-mode: #000000;}
 }
 
 [data-theme="light"] {
   	--powder-white-mode: #F1F5F9;
   	--midnight-blue-mode: #08223B;
-	--shadows-mode: #08223B;
-	--black-mode: #FFFFFF;}
+	--shadows-mode: #7599BA;}
 [data-theme="dark"] {
 	--powder-white-mode: #08223B;
 	--midnight-blue-mode: #F1F5F9;
-	--shadows-mode: #3F647A;
-	--black-mode: #000000;}
+	--shadows-mode: #000000;}
 	
 /*TYPOGRAFI */
 /*html størrelser for lettere at kunne lave media quaries*/
