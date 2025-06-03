@@ -1,6 +1,6 @@
 new Swiper('.swiper', {
   loop: true,
-	spaceBetween: 20,
+	spaceBetween: 0,
 
   // Pagination bullets
   pagination: {
@@ -20,13 +20,7 @@ new Swiper('.swiper', {
 //Responsive breakpoints	
 	breakpoints:{
 		0:{
-			slidesPerView: 3
-		},
-		800:{
-			slidesPerView: 4
-		},
-		1100:{
-			slidesPerView: 5
+			slidesPerView: 1
 		},
 	}
 });
