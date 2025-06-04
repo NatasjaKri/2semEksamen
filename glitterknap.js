@@ -1,24 +1,37 @@
-const glitterButton = document.querySelector('.glitter-button'); //finder den rigtige knap
+const glitterButton = document.querySelector('.glitter-button');
 
 function createSparkleOnButton(button) {
-  const sparkle = document.createElement('div');
-  sparkle.classList.add('sparkle'); //ny class, bruges i CSS
+  const svgNS = "http://www.w3.org/2000/svg";
 
-  //finder den rigtige position og størrelse på knappen
+  // Opret en inline SVG stjerne
+  const sparkle = document.createElementNS(svgNS, "svg");
+  sparkle.setAttribute("class", "sparkle");
+  sparkle.setAttribute("width", "12");
+  sparkle.setAttribute("height", "12");
+  sparkle.setAttribute("viewBox", "0 0 24 24");
+  sparkle.setAttribute("fill", "currentColor"); // så vi kan style med CSS
+
+  const path = document.createElementNS(svgNS, "path");
+  path.setAttribute("d", "M12 0L14.4 7.2L22 9L14.4 10.8L12 18L9.6 10.8L2 9L9.6 7.2L12 0Z");
+
+  sparkle.appendChild(path);
+
+  // Positionér sparkle på tilfældig placering inde i knappen
   const rect = button.getBoundingClientRect();
   const offsetX = Math.random() * rect.width;
   const offsetY = Math.random() * rect.height;
 
-  //placere glitter randomly + tilføjet scroll-behaviour hvis det skulle bruges senere. 
+  sparkle.style.position = "absolute";
   sparkle.style.left = `${rect.left + offsetX + window.scrollX}px`;
   sparkle.style.top = `${rect.top + offsetY + window.scrollY}px`;
 
   document.body.appendChild(sparkle);
 
-  setTimeout(() => sparkle.remove(), 800); //fjerner glitter efter animation
+  // Fjern sparkle efter animation
+  setTimeout(() => sparkle.remove(), 1500);
 }
 
-// Loop glitter hver 400ms
+// Start glitter-loop
 setInterval(() => {
   createSparkleOnButton(glitterButton);
 }, 700);
