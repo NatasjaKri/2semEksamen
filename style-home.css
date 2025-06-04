@@ -2,6 +2,7 @@
 /* CSS Document */
 
 /* Hero Section */
+
 #hero {
 	height: auto;
 	min-height: 65vh;
@@ -12,16 +13,12 @@
 	justify-content: flex-start;
 	flex-direction: column;
 	padding: 2rem 2rem;
-	border-radius: 2vw;
-	box-shadow: 6px 6px 4px black;
 	color: var(--powder-white-const);
-	text-align: center;
-}
+	text-align: center;}
 #hero-content {
 	display: flex;
 	flex-direction: column;
-	align-items: flex-end;
-}
+	align-items: flex-end;}
 #hero-text {
 	display: flex;
 	flex-direction: column;
@@ -30,14 +27,12 @@
 	max-width: 60vw;
 	text-align: end;
 	border-radius: 0.3rem;
-	gap: 1rem 0;
-}
+	gap: 1rem 0;}
 #hero-cta {
 	background-color: var(--contrast);
 	color: var(--powder-white);
 	padding: 15px;
-	margin-top: 2rem;
-}
+	margin-top: 2rem;}
 
 
 /* Content Section */
@@ -47,9 +42,7 @@
 	height: auto;
 	outline: 0.2rem solid var(--powder-white-const);
 	outline-offset: -2vw; 
-	background-image: linear-gradient(var(--sky-blue), var(--midnight-blue-const));
-	border-radius: 1rem;
-	box-shadow: 6px 6px 4px black;}
+	background-image: linear-gradient(var(--sky-blue), var(--midnight-blue-const));}
 .split-left, .split-right {
 	flex: 1;
 	display: flex;
@@ -58,16 +51,16 @@
 	justify-content: flex-start;
 	color: var(--powder-white-const);}
 #content-section h3 {
-	color: var(--midnight-blue-const);}
-
+	color: var(--midnight-blue-const);
+}
 .tools, .participants {
 	display: grid;
 	grid-template-columns: 5rem 1fr;
 	align-items: center;
 	margin: 0.5rem;}
 .icon {
-	width: 2.3rem;}
-
+	width: 2.3rem;
+}
 .factbox {
 	display: flex;
 	flex-direction: column;
@@ -107,7 +100,9 @@
 	flex-direction: column;
 	align-items: center;
 	text-align: center;
-	color: var(--midnight-blue-mode);}
+	color: var(--midnight-blue-mode);
+	border-radius: 0;
+	box-shadow: none;}
 #partner-button {
 	background-color: var(--midnight-blue-mode);
 	color: var(--powder-white-mode);
@@ -145,9 +140,7 @@
 	border-top-right-radius: 1rem;
 	justify-content: center;
 	padding-top: 2rem;
-	padding-bottom: 2rem;
-	border-radius: 2vw;
-	box-shadow: 6px 6px 4px black;}
+	padding-bottom: 2rem;}
 .card-item {
 	list-style: none;}
 .card {
@@ -170,13 +163,13 @@
 	text-align: center;
 	color: var(--midnight-blue-const);}
 
+/*swiper*/
 .swiper {
 	position:relative;
 	width:100%;
   	height: auto;
 	overflow:visible;
-	margin-top: 2rem;
-}
+	margin-top: 2rem;}
 .swiper-button-prev,
 .swiper-button-next {
 	position:absolute !important;
@@ -200,7 +193,9 @@
 	align-items: center;
 	text-align: center;
 	padding: 3rem;
-	position: relative;}
+	position: relative;
+	border-radius: 0;
+	box-shadow: none;}
 #faculty-section h4{
 	font-size: 1rem;
 	text-align: center;}

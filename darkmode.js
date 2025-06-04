@@ -2,17 +2,17 @@
 
 const toggleButton = document.getElementById("toggle-theme");
 
-// 1. Find ud af hvilket tema der skal bruges ved load
+// 1. Find ud af hvilken mode der skal bruges ved load
 let savedTheme = localStorage.getItem("theme");
 if (!savedTheme) {
   // Brug systemindstilling hvis intet er gemt
   savedTheme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
 }
 
-// 2. Sæt tema og ikon ud fra valgt tema
+// 2. Sæt mode og ikon ud fra valgt mode
 setTheme(savedTheme);
 
-// 3. Skift tema når der klikkes på knappen
+// 3. Skift mode når der klikkes på knappen
 toggleButton.addEventListener("click", () => {
   const currentTheme = document.documentElement.getAttribute("data-theme");
   const newTheme = currentTheme === "dark" ? "light" : "dark";
@@ -20,7 +20,7 @@ toggleButton.addEventListener("click", () => {
   localStorage.setItem("theme", newTheme);
 });
 
-// 4. Funktion til at opdatere theme + ikon
+// 4. Funktion til at opdatere mode + ikon
 function setTheme(theme) {
   document.documentElement.setAttribute("data-theme", theme);
   document.getElementById("icon-sun").style.display = theme === "dark" ? "inline" : "none";
