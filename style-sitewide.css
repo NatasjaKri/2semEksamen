@@ -98,7 +98,7 @@ p {
 /*Knapper*/
 .menu-knap {
 	background-color: var(--midnight-blue-const);
-	border-radius: 1vw;
+	border-radius: 0.5rem;
 	cursor: pointer;
 	display: inline-block;
 	padding: 0.5rem 1rem;
@@ -107,18 +107,13 @@ p {
 	text-decoration: none;
 	user-select: none;
 	touch-action: manipulation;
-	transition: transform 0.1s ease, box-shadow 0.1s ease;
-}
-
+	transition: transform 0.1s ease, box-shadow 0.1s ease;}
 .menu-knap:hover {
 	box-shadow: black 6px 6px 4px 0;
-	transform: translate(-6px, -6px)
-}
-
+	transform: translate(-6px, -6px)}
 .shadow-button:active {
 	box-shadow: black -2px 2px 0 0;
-	transform: translate(-2px, 2px);
-}
+	transform: translate(-2px, 2px);}
 
 /*Generel styling*/
 body {
@@ -135,14 +130,16 @@ body {
 	margin-bottom: 0;
 	margin-left: 8vw;
 	margin-right: 8vw;
-}
+	border-radius: 1rem;
+	box-shadow: 6px 6px 4px black;}
 .section-wide {
 	margin-top: 5rem;
 	margin-bottom: 0;
 	margin-left: 0;
 	margin-right: 0;
 	padding:8vw;
-}
+	border-radius: 1rem;
+	box-shadow: 6px 6px 4px black;}
 
 /*Scroll*/
 .scroll-area {
@@ -191,7 +188,7 @@ body {
 	padding: 0.5rem 8vw;
 	background-color: var(--gun-blue);
 	color: var(--contrast);
-	border-radius: 0 0 2vw 2vw;
+	border-radius: 0 0 1rem 1rem;
 	box-shadow: 6px 6px 4px black;
 	z-index: 1;
 }
@@ -228,41 +225,30 @@ body {
 	align-items: center;
 	transition: transform 0.1s ease, box-shadow 0.1s ease;
 	padding: 0.5rem;
-	border-radius: 50px;
-}
-
+	border-radius: 50px;}
 .logo-tag:hover {
 	box-shadow: black 6px 6px 4px 0;
 	transform: translate(-6px, -6px);
-	cursor: pointer;
-}
-
+	cursor: pointer;}
 .logo-tag:active {
 	box-shadow: black 2px 2px 0 0;
-	transform: translate(-2px, -2px);
-}
-
+	transform: translate(-2px, -2px);}
 .logo-tag h2 {
 	color: var(--contrast);
-	line-height: 2.6rem;;
-}
-
+	line-height: 2.6rem;;}
 .logo-tag img {
 	height: 6rem;
-	margin-right: -2rem;
-}
+	margin-right: -2rem;}
 
+/*knapper*/
 .nav-links {
 	display: flex;
 	flex-direction: row-reverse;}
-
 .nav-links a {
 	margin: 0 15px;
 	text-decoration: none;
 	color: var(--powder-white-const);
-	font-weight: bold;
-}
-
+	font-weight: bold;}
 #active {
 	background-color: var(--sky-blue);}
 
@@ -303,7 +289,7 @@ body {
 	background-position: left bottom, right bottom;
 	background-size: 70px;
 	color: var(--powder-white-const);
-	border-radius: 2vw 2vw 0 0;
+	border-radius: 1rem 1rem 0 0;
 	box-shadow: 6px -6px 4px black;}
 
 .site-footer a {
