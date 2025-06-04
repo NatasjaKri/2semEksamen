@@ -329,6 +329,8 @@ body {
 	.section-smal  {
 		margin-left: 7vw;
 		margin-right: 7vw;}
+	.section-wide {
+		padding:7vw;}
 	.site-header {
 		padding: 0 7vw 0 7vw;}
 	.site-footer {
@@ -338,6 +340,8 @@ body {
 	.section-smal {
 		margin-left: 5vw;
 		margin-right: 5vw;}
+	.section-wide {
+		padding:5vw;}
 	.site-header {
 		padding: 0 5vw 0 5vw;}
 	#toggle-theme {
@@ -351,7 +355,7 @@ body {
 		margin-right: 2vw;}
 	.site-header {
 		align-items: baseline;
-		padding: 1rem 2vw 1rem 2vw;}
+		padding: 1rem 0vw 1rem 15px;}
 	.logo-tag {
 		margin-top: 0.2rem;}
 	#toggle-theme {
@@ -364,12 +368,10 @@ body {
 	p {
 		font-size: 1.2rem;}
 }
-@media (max-width:600px){
+@media (max-width:700px){
 	.section-smal  {
 		margin-left: 1vw;
 		margin-right: 1vw;}
-	.site-header {
-		padding: 0 1vw 0 1vw;}
 	.logo-tag {
 		margin-top: 1rem;}
 	.site-footer {
