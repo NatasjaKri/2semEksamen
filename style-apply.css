@@ -2,6 +2,7 @@
 /* CSS Document */
 
 /* Hero Section */
+
 #hero {
 	height: auto;
 	min-height: 65vh;
@@ -12,30 +13,28 @@
 	justify-content: flex-start;
 	flex-direction: column;
 	padding: 2rem 2rem;
-	border-radius: 1rem;
-	box-shadow: 0 0.2rem 1rem 0.3rem var(--shadows-mode);
 	color: var(--powder-white-const);
-	text-align: center;
-}
-
-.hero-content {
+	text-align: center;}
+#hero-content {
 	display: flex;
 	flex-direction: column;
-	align-items: flex-end;
-}
-
-.hero-text {
+	align-items: flex-end;}
+#hero-text {
 	display: flex;
 	flex-direction: column;
-	padding: 40px 10px;
-	max-width: 400px;
+	padding: 2rem 1rem;
+	width: 40vw;
+	max-width: 60vw;
 	text-align: end;
-	border-radius: 5px;
-	gap: 20px 0px;
-}
-
+	border-radius: 0.3rem;
+	gap: 1rem 0;}
 #go-home {
 	background-color: var(--contrast);
 	color: var(--midnight-blue-const);
 	padding: 15px;
+	margin-top: 2rem;}
+
+@media (max-width: 800px) {
+	#hero-text {
+		width: 50vw;}
 }

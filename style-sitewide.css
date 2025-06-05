@@ -296,33 +296,36 @@ body {
 .site-footer a {
 	color: var(--powder-white-const);
 	text-decoration: none;
-	margin-left: 15px;}
+	margin-left: 1vw;}
 .footer-left h4 {
-	margin-bottom: 10px;}
+	margin-bottom: 1rem;}
 .footer-left a {
-	margin-left: 0px;}
+	margin-left: 0;}
 .footer-left p img {
-	width: 25px;
-	margin-right: 10px;
-	margin-bottom: 5px;
+	width: 2rem;
+	margin-right: 1rem;
+	margin-bottom: 0.2rem;
   	vertical-align: middle;}
 
 .footer-right {
 	display: flex;
 	flex-direction: column;
 	align-items: flex-end;   
-	row-gap: 70px;}
+	row-gap: 6rem;
+	margin-right: 1vw;}
 .footer-right img{
-	width: 45px;}
+	width: 2.5rem;}
 
 .logo-footer {
 	display: flex;
 	align-items: center;
 	gap: 20px;}
 .dania-logo {
-	width: 120px !important;}
+	height: 2.5rem !important;
+	width: auto !important;}
 .gamehub-logo {
-	width: 50px !important; }
+	height: 2.5rem !important;
+	width: auto !important;}
 .GP-watermark {
 	opacity: 30%;}
 
