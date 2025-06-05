@@ -208,6 +208,14 @@ body {
 [data-theme="light"] #icon-moon { display: inline; }
 [data-theme="dark"] #icon-sun { display: inline; }
 
+[data-theme="light"] 
+.partners-light {display: inline}
+.partners-dark {display: none;}
+[data-theme="dark"]
+.partners-dark {display: inline}
+.partners-light {display: none;}
+
+
 #toggle-theme { /*selve sol/måne knappen der skiftes via JS*/
 	position: fixed;
 	display:flex;
