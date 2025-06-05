@@ -154,32 +154,6 @@ body {
 }
 
 
-
-/*Glitter knap*/
-/*bobble sparkles  { /*henviser til en div i javascriptet
-  	position: absolute;
-  	width: 6px;
-  	height: 6px;
-  	background: white;
-  	border-radius: 50%;
-  	pointer-events: none; /*sikre at det ikke blokerer click
-  	opacity: 0; /* + animation = fader ud
-  	animation: sparkleAnim 0.8s ease-out forwards;
-	z-index: 10;
-}
-
-@keyframes sparkleAnim {
-  	0% { /*starter småt og vokser
-    	transform: scale(0.5);
-    	opacity: 1;
-  	}
-  	100% { /*vokser og fader ud
-    	transform: scale(1.5);
-    	opacity: 0;
-  	}
-}*/
-
-
 /* Header */
 .site-header {
 	display: flex;
@@ -190,28 +164,7 @@ body {
 	color: var(--contrast);
 	border-radius: 0 0 1rem 1rem;
 	box-shadow: 6px 6px 4px black;
-	z-index: 1;
-}
-
-/*princess sparkles*/
-.sparkle {
-  color: var(--contrast); /* Ændr farven på stjernerne her */
-  filter: drop-shadow(0 0 6px #FF66CC);
-  animation: sparkleAnim 1.5s ease-out forwards;
-  pointer-events: none;
-  z-index: 9999;
-}
-
-@keyframes sparkleAnim {
-  0% {
-    opacity: 1;
-    transform: scale(1);
-  }
-  100% {
-    opacity: 0;
-    transform: scale(0.6) rotate(45deg);
-  }
-}
+	z-index: 1;}
 
 /*Logo*/
 .logo-tag {
@@ -219,7 +172,7 @@ body {
 	align-items: center;
 	transition: transform 0.1s ease, box-shadow 0.1s ease;
 	padding: 0.5rem;
-	border-radius: 50px;}
+	border-radius: 1rem;}
 .logo-tag:hover {
 	box-shadow: black 6px 6px 4px 0;
 	transform: translate(-6px, -6px);
@@ -237,12 +190,16 @@ body {
 /*knapper*/
 .nav-links {
 	display: flex;
-	flex-direction: row-reverse;}
+	flex-direction: row-reverse;
+	margin: 0 15px 0 0 ;}
 .nav-links a {
-	margin: 0 15px;
+	margin: 0 0 0 15px ;
 	text-decoration: none;
 	color: var(--powder-white-const);
 	font-weight: bold;}
+.nav-links h5 {
+	font-size: 1.2rem;
+}
 #active {
 	background-color: var(--sky-blue);}
 
@@ -268,7 +225,49 @@ body {
 #toggle-theme:hover {
   	transform: rotate(25deg);}
 
+/*princess sparkles*/
+.sparkle {
+  color: var(--contrast); /* Ændr farven på stjernerne her */
+  filter: drop-shadow(0 0 6px #FF66CC);
+  animation: sparkleAnim 1.5s ease-out forwards;
+  pointer-events: none;
+  z-index: 9999;
+}
 
+@keyframes sparkleAnim {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(0.6) rotate(45deg);
+  }
+}
+
+/*Glitter knap*/
+/*bobble sparkles  { /*henviser til en div i javascriptet
+  	position: absolute;
+  	width: 6px;
+  	height: 6px;
+  	background: white;
+  	border-radius: 50%;
+  	pointer-events: none; /*sikre at det ikke blokerer click
+  	opacity: 0; /* + animation = fader ud
+  	animation: sparkleAnim 0.8s ease-out forwards;
+	z-index: 10;
+}
+
+@keyframes sparkleAnim {
+  	0% { /*starter småt og vokser
+    	transform: scale(0.5);
+    	opacity: 1;
+  	}
+  	100% { /*vokser og fader ud
+    	transform: scale(1.5);
+    	opacity: 0;
+  	}
+}*/
 
 /* Footer */
 .site-footer {
@@ -343,18 +342,15 @@ body {
 	.site-footer {
 		padding: 2rem 5vw;}
 }
+@media (max-width:900px){
+	#toggle-theme {
+		right: 0vw;
+		top:2.3rem;}
+}
 @media (max-width:800px){
 	.section-smal  {
 		margin-left: 2vw;
 		margin-right: 2vw;}
-	.site-header {
-		align-items: baseline;
-		padding: 1rem 0vw 1rem 15px;}
-	.logo-tag {
-		margin-top: 0.2rem;}
-	#toggle-theme {
-		top: 1rem;
-		right: 2vw;}
 	.site-footer {
 		padding: 2rem 2vw;}
 	h6 {
@@ -366,8 +362,16 @@ body {
 	.section-smal  {
 		margin-left: 1vw;
 		margin-right: 1vw;}
-	.logo-tag {
-		margin-top: 1rem;}
+	.site-header {
+		align-items: baseline;
+		padding: 0 0 15px 15px;}
+	.nav-links a {
+		margin: 0 0 0 1vw ;}
+	.nav-links h5 {
+		font-size: 1rem;}
+	#toggle-theme {
+		top: 1rem;
+		right: 2vw;}
 	.site-footer {
 		padding: 2rem 1vw;}
 	}
