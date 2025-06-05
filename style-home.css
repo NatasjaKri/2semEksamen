@@ -221,7 +221,7 @@
 .faculty-item {
 	list-style: none;
 	width: 100%;
-	max-width: 15vw;}
+	max-width: 20vw;}
 .faculty-image {
 	width:95%;
 	aspect-ratio: 1/1;
@@ -274,21 +274,24 @@
 		grid-template-columns: 25vw 1fr;}
 }
 @media (max-width: 700px) {
-  	.split-left {
+  	#content-section {
+    	padding: 0 0;}
+	.split-left {
    	 	width: 100%;
     	padding: 5vw 5vw 1vw 5vw;
     	margin: 0;}
 	.split-right {
-    	padding-bottom: 3rem;}
-  	#content-section {
-    	padding: 0 0;}
+    	padding-bottom: 3rem;
+		padding-left: 4vw;
+		padding-right: 4vw;}
+	.factbox {
+	 	width: 100%;}
 	.faculty-members{
 		display: grid;
 		grid-template-columns: 1fr 1fr 1fr;
 		gap: 1rem;}
 	.faculty-item {
-	list-style: none;
-	width: 15vw;}
+		max-width: 30vw;}
 	.card {
     	display: flex;
     	flex-direction: column;
@@ -298,5 +301,22 @@
     	margin-bottom: 2rem;}
 	.swiper-button-prev,
 	.swiper-button-next {
-		top: 40% !important;}
+		top: 30% !important;}
+}
+@media (max-width: 600px) {
+	#hero-text {
+		width: 80vw;}
+}
+@media (max-width: 500px) {
+	.card-image {
+    	width: 40vw;}
+	.swiper-button-prev,
+	.swiper-button-next {
+		top: 20% !important;}
+	.faculty-members{
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 1rem;}
+	.faculty-item {
+		max-width: 40vw;}
 }
