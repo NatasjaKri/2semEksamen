@@ -22,17 +22,15 @@
 #hero-text {
 	display: flex;
 	flex-direction: column;
-	padding: 2rem 1rem;
+	padding: 2rem 1rem 1rem 1rem;
 	width: 40vw;
-	max-width: 60vw;
 	text-align: end;
-	border-radius: 0.3rem;
-	gap: 1rem 0;}
+	border-radius: 0.3rem;}
 #hero-cta {
 	background-color: var(--contrast);
 	color: var(--powder-white);
 	padding: 15px;
-	margin-top: 2rem;}
+	margin-top: 2.5rem;}
 
 
 /* Content Section */
@@ -43,13 +41,19 @@
 	outline: 0.2rem solid var(--powder-white-const);
 	outline-offset: -2vw; 
 	background-image: linear-gradient(var(--sky-blue), var(--midnight-blue-const));}
-.split-left, .split-right {
-	flex: 1;
+.split-left {
+	flex: 1 1 auto;
+	display: flex;
+	flex-direction: column;
+	align-items:flex-start;
+	justify-content: flex-start;
+	color: var(--powder-white-const);
+	margin-right: 3vw}
+.split-right {
 	display: flex;
 	flex-direction: column;
 	align-items:flex-end;
-	justify-content: flex-start;
-	color: var(--powder-white-const);}
+	justify-content: flex-start;}
 #content-section h3 {
 	color: var(--midnight-blue-const);}
 
@@ -252,9 +256,7 @@
 
 /*media Quaries for responsivitet*/
 
-@media (max-width: 800px) {
-	#hero-text {
-		width: 50vw;}
+@media (max-width: 1000px) {
   	#content-section {
     	flex-direction: column;
 		align-items: center;  }
@@ -269,13 +271,24 @@
 		grid-template-columns: 9rem 1fr;
 		margin: 0.5rem 0;
 		align-items: start;}
+}
+@media (max-width: 800px) {
+	#hero {
+		height: auto;
+		min-height: 20vh;}
+	#hero-text {
+		width: 50vw;}
 	.card {
 		display:grid;
 		grid-template-columns: 25vw 1fr;}
 }
 @media (max-width: 700px) {
   	#content-section {
-    	padding: 0 0;}
+    	padding: 0 0;}	
+	#hero-text {
+		width: 55vw;}
+	#hero-cta {
+		margin-top: 1rem;}
 	.split-left {
    	 	width: 100%;
     	padding: 5vw 5vw 1vw 5vw;
@@ -301,18 +314,14 @@
     	margin-bottom: 2rem;}
 	.swiper-button-prev,
 	.swiper-button-next {
-		top: 30% !important;}
+		top: 115px !important;}
 }
-@media (max-width: 600px) {
+@media (max-width: 525px) {
 	#hero-text {
-		width: 80vw;}
-}
-@media (max-width: 500px) {
+		width: 100%;
+		text-align: center;}
 	.card-image {
     	width: 40vw;}
-	.swiper-button-prev,
-	.swiper-button-next {
-		top: 20% !important;}
 	.faculty-members{
 		display: grid;
 		grid-template-columns: 1fr 1fr;
