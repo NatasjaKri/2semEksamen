@@ -171,6 +171,45 @@ body {
 .logo-tag {
 	display: flex;
 	align-items: center;
+	cursor: pointer;
+}
+
+.logo-tag img {
+	height: 7rem;
+	margin-right: -0.6rem;
+}
+
+.logo-tag h2 {
+	display: inline-block;
+  	margin-top: 0.4rem;
+  	line-height: 1.2;
+}
+
+.word-game {
+	position: relative;
+	top: 0.3rem;
+}
+
+.word-game::after {
+  content: 'ame';
+  visibility: hidden;
+  display: inline-block;
+  height: 0;
+}
+
+.word-producer::after {
+  content: 'roducer';
+  visibility: hidden;
+  display: inline-block;
+  height: 0;
+}
+
+
+
+/* old logo: 
+.logo-tag {
+	display: flex;
+	align-items: center;
 	transition: transform 0.1s ease, box-shadow 0.1s ease;
 	padding: 0.5rem;
 	border-radius: 1rem;}
