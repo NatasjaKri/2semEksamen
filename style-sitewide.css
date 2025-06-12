@@ -168,28 +168,29 @@ body {
 	z-index: 1;}
 
 /*Logo*/
-.logo-tag {
-	display: flex;
-	align-items: center;
-	cursor: pointer;
+.logo-tag { 
+	display: flex; /*tekst ved siden af logo*/
+	align-items: center; /*centrere*/
+	cursor: pointer; 
 }
 
-.logo-tag img {
+.logo-tag img { /*justering af størrelse*/
 	height: 7rem;
 	margin-right: -0.6rem;
 }
 
-.logo-tag h2 {
+.logo-tag h2 { /*Tilføjer og sikre en passende linjeafstand*/
 	display: inline-block;
   	margin-top: 0.4rem;
   	line-height: 1.2;
 }
 
-.word-game {
+.word-game { /*rykker "amen" en smule ned*/
 	position: relative;
 	top: 0.3rem;
 }
 
+/*Tilføjer usynligt “plads-reserverende” indhold, så layoutet ikke hopper, når teksten bliver skrevet ind med animation.*/
 .word-game::after {
   content: 'ame';
   visibility: hidden;
@@ -203,29 +204,6 @@ body {
   display: inline-block;
   height: 0;
 }
-
-
-
-/* old logo: 
-.logo-tag {
-	display: flex;
-	align-items: center;
-	transition: transform 0.1s ease, box-shadow 0.1s ease;
-	padding: 0.5rem;
-	border-radius: 1rem;}
-.logo-tag:hover {
-	box-shadow: black 6px 6px 4px 0;
-	transform: translate(-6px, -6px);
-	cursor: pointer;}
-.logo-tag:active {
-	box-shadow: black 2px 2px 0 0;
-	transform: translate(-2px, -2px);}
-.logo-tag h2 {
-	color: var(--contrast);
-	line-height: 2.6rem;;}
-.logo-tag img {
-	height: 6rem;
-	margin-right: -2rem;}
 
 /*knapper*/
 .nav-links {
