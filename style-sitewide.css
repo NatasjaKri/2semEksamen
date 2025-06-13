@@ -170,7 +170,7 @@ body {
 /*Logo*/
 .logo-tag { 
 	display: flex; /*tekst ved siden af logo*/
-	align-items: center; /*centrere*/
+	align-items: center; /*centrerer*/
 	cursor: pointer; 
 }
 
@@ -185,7 +185,7 @@ body {
   	line-height: 1.2;
 }
 
-.word-game { /*rykker "amen" en smule ned*/
+.word-game { /*rykker "ame" en smule ned*/
 	position: relative;
 	top: 0.3rem;
 }

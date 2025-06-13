@@ -6,9 +6,9 @@
 #hero {
 	height: auto;
 	min-height: 65vh;
-	background-image: radial-gradient(circle at left bottom, rgba(0, 0, 0, 0), var(--gun-blue) 70%), url("img/hero-image.jpg");
+	background-image: radial-gradient(circle at 20% top, rgba(0, 0, 0, 0), var(--gun-blue) 80%), url("img/hero.jpg");
 	background-size: cover;
-	background-position: top;
+	background-position:left top;
 	display: flex;
 	justify-content: flex-start;
 	flex-direction: column;
@@ -19,13 +19,25 @@
 	display: flex;
 	flex-direction: column;
 	align-items: flex-end;}
+#hero h1 {
+	text-shadow:
+   		1px 1px 3px black,
+  		-1px -1px 3px black,
+   		1px -1px 3px black,
+  		-1px 1px 3px black;
+}
 #hero-text {
 	display: flex;
 	flex-direction: column;
 	padding: 2rem 1rem 1rem 1rem;
 	width: 40vw;
 	text-align: end;
-	border-radius: 0.3rem;}
+	border-radius: 0.3rem;	
+	text-shadow:
+  		1px 1px 2px black,
+  		-1px -1px 2px black,
+   		1px -1px 2px black,
+  		-1px 1px 2px black;}
 #hero-cta {
 	background-color: var(--contrast);
 	color: var(--powder-white);
@@ -283,6 +295,8 @@
 		grid-template-columns: 25vw 1fr;}
 }
 @media (max-width: 700px) {
+	#hero {
+		background-position:20% top;}
   	#content-section {
     	padding: 0 0;}	
 	#hero-text {
@@ -317,6 +331,9 @@
 		top: 115px !important;}
 }
 @media (max-width: 600px) {
+	#hero {
+		background-image: radial-gradient(circle at 20% center, rgba(0, 0, 0, 0), var(--gun-blue) 80%), url("img/hero.jpg");
+		background-position:20% top;}
 	.logo-partner {
 		min-height: 10vw;
 		max-height: 12vw;
