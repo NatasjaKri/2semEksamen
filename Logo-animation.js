@@ -5,6 +5,11 @@ const wordProducer = document.querySelector('.word-producer');
 
 let gameTimeout, producerTimeout;
 
+// Kun aktivér animation hvis skærmbredden er over 800px
+function shouldAnimate() {
+  return window.innerWidth > 800;
+}
+
 // En funktion der skriver ét bogstav ad gangen i et element, med mulighed for at kalde næste animation bagefter.
 function typeText(target, text, speed, callback) {
   let i = 0;
@@ -47,3 +52,21 @@ logo.addEventListener('mouseleave', () => {
   wordGame.textContent = '';
   wordProducer.textContent = '';
 });
+
+
+// Funktion til at sætte statisk tekst hvis animation er slået fra
+function setStaticLogoText() {
+  if (!shouldAnimate()) {
+    wordGame.textContent = 'ame';
+    wordProducer.textContent = 'roducer';
+  } else {
+    wordGame.textContent = '';
+    wordProducer.textContent = '';
+  }
+}
+
+// Kør funktionen ved load
+setStaticLogoText();
+
+// Og igen hvis skærmstørrelsen ændres
+window.addEventListener('resize', setStaticLogoText);
