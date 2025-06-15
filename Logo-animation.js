@@ -1,4 +1,3 @@
-//Finder HTML-elementerne vi skal bruge til animationen.
 const logo = document.querySelector('.logo-tag');
 const wordGame = document.querySelector('.word-game');
 const wordProducer = document.querySelector('.word-producer');
@@ -10,7 +9,7 @@ function shouldAnimate() {
   return window.innerWidth > 800;
 }
 
-// En funktion der skriver ét bogstav ad gangen i et element, med mulighed for at kalde næste animation bagefter.
+// Skriver ét bogstav ad gangen
 function typeText(target, text, speed, callback) {
   let i = 0;
   target.textContent = '';
@@ -21,8 +20,6 @@ function typeText(target, text, speed, callback) {
       i++;
       const timeout = setTimeout(type, speed);
 
-     // Funktion der skriver tekst ud ét bogstav ad gangen
-	 // Bruges til at animere "ame" og "roducer" med en typewriter-effekt
       if (target.classList.contains('word-game')) gameTimeout = timeout;
       if (target.classList.contains('word-producer')) producerTimeout = timeout;
     } else if (callback) {
@@ -33,40 +30,66 @@ function typeText(target, text, speed, callback) {
   type();
 }
 
-//Når musen holdes over logoet, aktiveres animationsfunktionen — først “ame”, derefter “roducer”.
+// Sletter ét bogstav ad gangen baglæns
+function eraseText(target, speed, callback) {
+  let text = target.textContent;
+  let i = text.length;
+
+  function erase() {
+    if (i > 0) {
+      target.textContent = text.substring(0, i - 1);
+      i--;
+      const timeout = setTimeout(erase, speed);
+
+      if (target.classList.contains('word-game')) gameTimeout = timeout;
+      if (target.classList.contains('word-producer')) producerTimeout = timeout;
+    } else if (callback) {
+      callback();
+    }
+  }
+
+  erase();
+}
+
+// Start typewriter-animation når siden loader
+window.addEventListener('load', () => {
+  if (shouldAnimate()) {
+    typeText(wordGame, 'ame', 100, () => {
+      typeText(wordProducer, 'roducer', 100);
+    });
+  } else {
+    wordGame.textContent = 'ame';
+    wordProducer.textContent = 'roducer';
+  }
+});
+
+// Når musen holdes over logoet, slettes teksten baglæns
 logo.addEventListener('mouseenter', () => {
-  // fjerner eksisterende timeouts, undgår dublikering
   clearTimeout(gameTimeout);
   clearTimeout(producerTimeout);
 
-  // Startr animationen + tid
-  typeText(wordGame, 'ame', 40, () => {
-    typeText(wordProducer, 'roducer', 40);
+  eraseText(wordProducer, 50, () => {
+    eraseText(wordGame, 50);
   });
 });
 
-//Når musen forlader logoet, bliver teksten fjernet og eventuelle animationer stoppet, så det kan starte forfra.
+// Når musen fjernes, skrives teksten frem igen
 logo.addEventListener('mouseleave', () => {
   clearTimeout(gameTimeout);
   clearTimeout(producerTimeout);
-  wordGame.textContent = '';
-  wordProducer.textContent = '';
+
+  typeText(wordGame, 'ame', 50, () => {
+    typeText(wordProducer, 'roducer', 50);
+  });
 });
 
-
-// Funktion til at sætte statisk tekst hvis animation er slået fra
+// Hvis skærmen ændrer størrelse, og animation ikke skal vises
 function setStaticLogoText() {
   if (!shouldAnimate()) {
     wordGame.textContent = 'ame';
     wordProducer.textContent = 'roducer';
-  } else {
-    wordGame.textContent = '';
-    wordProducer.textContent = '';
   }
 }
 
-// Kør funktionen ved load
-setStaticLogoText();
-
-// Og igen hvis skærmstørrelsen ændres
 window.addEventListener('resize', setStaticLogoText);
+
