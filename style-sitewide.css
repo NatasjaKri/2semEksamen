@@ -394,13 +394,13 @@ body {
 @media (max-width: 525px) {
   	
 	.site-header {
-		padding: 0 0 3.5rem 15px;}
+		padding: 0 0 4rem 15px;}
 	.nav-links {
     	display: flex;
     	flex-direction:row-reverse;
 		justify-content: space-between;
 		position: absolute;
-		top: 6rem;
+		top: 6.5rem;
 		left: 0;
 		width: 96vw;
 		margin-left: 2vw;
