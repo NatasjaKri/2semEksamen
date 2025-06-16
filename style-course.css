@@ -6,9 +6,9 @@
 #hero {
 	height: auto;
 	min-height: 65vh;
-	background-image: radial-gradient(circle at left bottom, rgba(0, 0, 0, 0), var(--gun-blue) 70%), url("img/hero-image.jpg");
+	background-image: radial-gradient(circle at 20% top, rgba(0, 0, 0, 0), var(--gun-blue) 80%), url("img/hero.jpg");
 	background-size: cover;
-	background-position: top;
+	background-position:left top;
 	display: flex;
 	justify-content: flex-start;
 	flex-direction: column;
@@ -19,20 +19,30 @@
 	display: flex;
 	flex-direction: column;
 	align-items: flex-end;}
+#hero h1 {
+	text-shadow:
+   		1px 1px 3px black,
+  		-1px -1px 3px black,
+   		1px -1px 3px black,
+  		-1px 1px 3px black;
+}
 #hero-text {
 	display: flex;
 	flex-direction: column;
-	padding: 2rem 1rem;
+	padding: 2rem 1rem 1rem 1rem;
 	width: 40vw;
-	max-width: 60vw;
 	text-align: end;
-	border-radius: 0.3rem;
-	gap: 1rem 0;}
+	border-radius: 0.3rem;	
+	text-shadow:
+  		1px 1px 2px black,
+  		-1px -1px 2px black,
+   		1px -1px 2px black,
+  		-1px 1px 2px black;}
 #go-home {
 	background-color: var(--contrast);
-	color: var(--midnight-blue-const);
+	color: var(--powder-white);
 	padding: 15px;
-	margin-top: 2rem;}
+	margin-top: 2.5rem;}
 
 @media (max-width: 800px) {
 	#hero-text {
